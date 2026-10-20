@@ -1,0 +1,301 @@
+/* ==========================================================================
+   FOOTER COMPONENT STYLES - IESTP HUANTA
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --footer-bg-dark: #050814;
+  --footer-bg-darker: #02040a;
+  --footer-text-title: #ffffff;
+  --footer-text-body: #94a3b8;
+  --footer-text-light: #cbd5e1;
+  --footer-accent-blue: #0284c7;
+  --footer-accent-cyan: #38bdf8;
+  --footer-purple-btn: #6366f1;
+  --footer-purple-hover: #4f46e5;
+  --footer-border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+.site-footer {
+  position: relative;
+  width: 100%;
+  background: var(--footer-bg-dark);
+  color: var(--footer-text-body);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Geometric Angular Background Facets (as seen in screenshot) */
+.footer-background-facets {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer-facet-left {
+  position: absolute;
+  top: -20%;
+  left: -15%;
+  width: 50%;
+  height: 140%;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.35) 0%, rgba(15, 23, 42, 0.1) 70%, transparent 100%);
+  transform: rotate(-15deg);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+}
+
+.footer-facet-right {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 45%;
+  height: 130%;
+  background: linear-gradient(225deg, rgba(30, 27, 75, 0.25) 0%, rgba(15, 23, 42, 0.1) 60%, transparent 100%);
+  transform: rotate(12deg);
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Main Container */
+.footer-main {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 60px clamp(32px, 5vw, 95px) 45px clamp(32px, 5vw, 95px);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 1.2fr 1.1fr;
+  gap: clamp(24px, 4vw, 60px);
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+}
+
+/* Column 1: Brand & Subtitle */
+.footer-col-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-brand-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.footer-brand-logo-link:hover {
+  transform: scale(1.03);
+}
+
+.footer-brand-logo {
+  height: 52px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
+}
+
+.footer-brand-text {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--footer-text-light);
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+/* Headings for columns */
+.footer-heading {
+  color: var(--footer-text-title);
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.2px;
+  position: relative;
+}
+
+/* Column 2: Facebook */
+.footer-col-facebook {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--footer-text-light);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border-radius: 6px;
+}
+
+.footer-social-btn:hover {
+  color: #1877f2;
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 10px rgba(24, 119, 242, 0.4));
+}
+
+.footer-social-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* Column 3: Información */
+.footer-col-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--footer-text-body);
+  line-height: 1.4;
+}
+
+.footer-info-link {
+  color: var(--footer-text-body);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-info-link:hover {
+  color: var(--footer-accent-cyan);
+}
+
+.footer-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-accent-cyan);
+  flex-shrink: 0;
+}
+
+.footer-info-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* Column 4: Horario de atención */
+.footer-col-schedule {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-schedule-text {
+  margin: 0;
+  font-size: 14px;
+  color: var(--footer-text-body);
+  line-height: 1.5;
+}
+
+/* Bottom Bar: Copyright */
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid var(--footer-border-subtle);
+  padding: 22px 24px;
+  text-align: center;
+}
+
+.footer-copyright {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--footer-text-body);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-copyright strong {
+  font-weight: 600;
+  color: var(--footer-text-light);
+}
+
+/* Scroll To Top Button */
+.footer-scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--footer-purple-btn) 0%, var(--footer-purple-hover) 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 999;
+  opacity: 0.95;
+}
+
+.footer-scroll-top:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+}
+
+.footer-scroll-top:active {
+  transform: translateY(-1px);
+}
+
+.footer-scroll-top svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-main {
+    padding: 45px 16px 35px 16px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer-scroll-top {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}

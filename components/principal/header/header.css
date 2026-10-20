@@ -1,0 +1,490 @@
+/* ==========================================================================
+   HEADER COMPONENT STYLES - IESTP HUANTA
+   ========================================================================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --header-primary: #4f46e5;
+  --header-primary-dark: #3730a3;
+  --header-gradient-start: #2563eb;
+  --header-gradient-mid: #6366f1;
+  --header-gradient-end: #8b5cf6;
+  --header-text-dark: #1e293b;
+  --header-text-muted: #475569;
+  --header-border-light: #f1f5f9;
+  --header-divider: #e2e8f0;
+  --header-white: #ffffff;
+  --header-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06);
+  --header-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header {
+  width: 100%;
+  position: relative;
+  background-color: var(--header-white);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  z-index: 1000;
+  box-shadow: var(--header-shadow);
+}
+
+/* ==========================================================================
+   1. TOP BAR (Información y Contacto)
+   ========================================================================== */
+.header-topbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--header-border-light);
+  font-size: 13px;
+  color: var(--header-text-muted);
+}
+
+.header-topbar-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-topbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.header-topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--header-text-muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: var(--header-transition);
+}
+
+.header-topbar-item:hover {
+  color: var(--header-primary);
+}
+
+.header-topbar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--header-primary);
+  flex-shrink: 0;
+}
+
+.header-topbar-icon svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+}
+
+.header-topbar-divider {
+  width: 1px;
+  height: 16px;
+  background-color: var(--header-divider);
+  margin: 0 2px;
+}
+
+.header-social-link {
+  color: #4b5563;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--header-transition);
+  padding: 2px 4px;
+}
+
+.header-social-link:hover {
+  color: #1877f2;
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   2. MAIN NAVBAR & LOGO BANNER
+   ========================================================================== */
+.header-main-nav {
+  position: relative;
+  background: var(--header-white);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.header-nav-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 28px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+/* Lado izquierdo: Insignia angular con degradado y olas animadas */
+.header-brand-wrap {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 52px;
+  background: linear-gradient(130deg, #0c38b3 0%, #0c2dc2 25%, #2016db 65%, #5806e4 100%);
+  background-size: 200% 200%;
+  animation: gradientFlow 10s ease infinite alternate;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 32px) 100%, 0 100%);
+  overflow: hidden;
+  box-shadow: 4px 0 15px rgba(37, 99, 235, 0.3);
+  z-index: 10;
+}
+
+/* Contenedor de olas de agua en movimiento continuo */
+.brand-waves-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.brand-wave {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: 0 bottom;
+}
+
+/* Ola profunda (blanco translúcido) */
+.brand-wave.wave-back {
+  opacity: 0.28;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpath d='M0,45 C200,90 350,10 500,50 C650,90 800,10 1000,45 L1000,120 L0,120 Z' fill='%23ffffff'/%3E%3C/svg%3E");
+  background-size: 33.333% 55px;
+  animation: waveMotion1 9s linear infinite;
+}
+
+/* Ola media (azul celeste traslúcido) */
+.brand-wave.wave-mid {
+  opacity: 0.22;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpath d='M0,35 C150,5 350,75 500,35 C650,-5 850,75 1000,35 L1000,120 L0,120 Z' fill='%2393c5fd'/%3E%3C/svg%3E");
+  background-size: 33.333% 48px;
+  animation: waveMotion2 6.5s linear infinite;
+}
+
+/* Ola frontal (morado claro suave) */
+.brand-wave.wave-front {
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 120' preserveAspectRatio='none'%3E%3Cpath d='M0,55 C250,25 350,85 500,55 C650,25 750,85 1000,55 L1000,120 L0,120 Z' fill='%23e0e7ff'/%3E%3C/svg%3E");
+  background-size: 33.333% 40px;
+  animation: waveMotion1 4.5s linear infinite reverse;
+}
+
+@keyframes waveMotion1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+@keyframes waveMotion2 {
+  0% { transform: translateX(-33.333%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header-brand-logo-link {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-brand-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.28));
+  transition: transform 0.3s ease;
+}
+
+.header-brand-logo-link:hover .header-brand-logo-img {
+  transform: scale(1.04);
+}
+
+/* Desktop Navigation Menu */
+.header-menu-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  max-width: 1060px;
+  margin-right: auto;
+  padding: 0 20px 0 52px;
+}
+
+.header-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header-menu-item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: var(--header-text-dark);
+  font-size: 13.8px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 8px 2px;
+  transition: var(--header-transition);
+  position: relative;
+}
+
+.header-menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3.5px;
+  background: linear-gradient(90deg, #1d4ed8 0%, #7c3aed 100%);
+  border-radius: 2px 2px 0 0;
+  transition: width 0.25s ease;
+  z-index: 102;
+}
+
+.header-menu-item:hover::after {
+  width: 100%;
+}
+
+.header-menu-item:hover > .header-menu-link {
+  color: var(--header-primary);
+}
+
+.header-caret-icon {
+  width: 11px;
+  height: 11px;
+  stroke-width: 2.5;
+  transition: transform 0.25s ease;
+  color: #64748b;
+}
+
+.header-menu-item:hover .header-caret-icon {
+  transform: rotate(180deg);
+  color: var(--header-primary);
+}
+
+/* Dropdown Menu */
+.header-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 275px;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 14px 28px -5px rgba(0, 0, 0, 0.15), 0 6px 10px -2px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  padding: 18px 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.header-menu-item:last-child .header-dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.header-menu-item:hover .header-dropdown-menu,
+.header-menu-item:focus-within .header-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header-dropdown-item a {
+  display: flex;
+  align-items: center;
+  padding: 9px 24px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #1e293b;
+  text-decoration: none;
+  transition: var(--header-transition);
+}
+
+.header-dropdown-item a:hover {
+  background: #f8fafc;
+  color: var(--header-primary);
+  padding-left: 28px;
+}
+
+/* Mobile Toggle Button */
+.header-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--header-text-dark);
+  border-radius: 8px;
+  transition: var(--header-transition);
+}
+
+.header-mobile-toggle:hover {
+  background-color: #f1f5f9;
+}
+
+.header-mobile-toggle svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Tablets & Mobile)
+   ========================================================================== */
+@media (max-width: 1120px) {
+  .header-menu-list {
+    gap: 14px;
+  }
+  .header-menu-link {
+    font-size: 13.5px;
+  }
+  .header-brand-logo-img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 980px) {
+  .header-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+  }
+
+  .header-topbar-container {
+    justify-content: center;
+  }
+
+  .header-topbar-items {
+    justify-content: center;
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .header-menu-nav {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #f1f5f9;
+    display: none;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .header-menu-nav.active {
+    display: flex;
+  }
+
+  .header-menu-list {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 0;
+  }
+
+  .header-menu-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .header-menu-link {
+    width: 100%;
+    padding: 14px 6px;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+
+  .header-dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: #f8fafc;
+    width: 100%;
+    padding: 4px 0 10px 14px;
+    display: none;
+  }
+
+  .header-dropdown-menu::before {
+    display: none;
+  }
+
+  .header-menu-item.active .header-dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-topbar-item span.info-text {
+    display: none;
+  }
+  .header-brand-gradient-bg {
+    right: -24px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 24px) 100%, 0 100%);
+  }
+  .header-brand-logo-img {
+    height: 44px;
+  }
+}

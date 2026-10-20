@@ -1,0 +1,166 @@
+<div class="inicio-wrapper" id="inicioSection">
+
+  <!-- ====================================================================
+       1. HERO SLIDER BANNER (Fondo con graduado, superposición y texto)
+       ==================================================================== -->
+  <section class="hero-slider" aria-label="Banner principal de bienvenida">
+    <!-- Superposición geométrica angular original (h2-bg-slider1-overlay.png) -->
+    <div class="hero-slider-overlay" aria-hidden="true"></div>
+    <div class="hero-slider-scrim" aria-hidden="true"></div>
+
+    <!-- Flecha izquierda del slider -->
+    <button class="slider-arrow-btn slider-arrow-prev" id="sliderPrevBtn" aria-label="Diapositiva anterior" title="Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <!-- Contenido del Slider -->
+    <div class="hero-slider-container">
+      <div class="hero-slider-content">
+        <!-- Pastilla de Identificación -->
+        <div class="hero-badge-tag">
+          INSTITUTO DE EDUCACIÓN SUPERIOR PÚBLICO "HUANTA"
+        </div>
+
+        <!-- Título Principal -->
+        <h1 class="hero-main-title">
+          Construye tu futuro con<br>
+          formación de calidad
+        </h1>
+
+        <!-- Párrafo descriptivo -->
+        <p class="hero-main-desc">
+          El Instituto de Educación Superior Público Huanta se enorgullece de ser un instituto licenciado, lo que garantiza que nuestros programas académicos cumplen con los más altos estándares de calidad establecidos por las autoridades educativas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Flecha derecha del slider -->
+    <button class="slider-arrow-btn slider-arrow-next" id="sliderNextBtn" aria-label="Siguiente diapositiva" title="Siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </section>
+
+  <!-- ====================================================================
+       2. TARJETAS FLOTANTES DE LOS 5 PROGRAMAS DE ESTUDIOS
+       ==================================================================== -->
+  <section class="programs-cards-container" aria-label="Programas de estudios destacados">
+    <div class="programs-cards-grid">
+      
+      <!-- Tarjeta 1: Diseño y Programación Web -->
+      <a href="#diseno-programacion-web" class="program-card-item">
+        <div class="program-card-icon icon-web" aria-hidden="true">
+          <!-- Icono Ventana de Navegador con Código y Engranaje -->
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="8" width="38" height="26" rx="4" />
+            <circle cx="11" cy="14" r="1.5" fill="currentColor" />
+            <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+            <path d="m19 25-4-4 4-4" />
+            <path d="m29 17 4 4-4 4" />
+            <!-- Engranaje decorativo inferior -->
+            <circle cx="36" cy="34" r="6" fill="#ffffff" stroke="currentColor" stroke-width="2.5" />
+            <path d="M36 25v3M36 40v3M27 34h3M42 34h3" />
+          </svg>
+        </div>
+        <h2 class="program-card-title">Diseño y<br>Programación<br>Web</h2>
+      </a>
+
+      <!-- Tarjeta 2: Enfermería Técnica -->
+      <a href="#enfermeria-tecnica" class="program-card-item">
+        <div class="program-card-icon icon-enfermeria" aria-hidden="true">
+          <!-- Icono Ambulancia con Cruz Médica -->
+          <svg viewBox="0 0 48 48" fill="currentColor">
+            <path d="M38 15h-8v-4a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h2a5 5 0 0 0 10 0h14a5 5 0 0 0 10 0h1a2 2 0 0 0 2-2v-9a7 7 0 0 0-7-7zM16 37a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm22 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm3-15h-7v-6h5a4 4 0 0 1 4 4v2z"/>
+            <!-- Cruz médica dentro de la ambulancia -->
+            <path d="M16 14h4v3h3v4h-3v3h-4v-3h-3v-4h3z" fill="#ffffff"/>
+          </svg>
+        </div>
+        <h2 class="program-card-title">Enfermería<br>Técnica</h2>
+      </a>
+
+      <!-- Tarjeta 3: Mecatrónica Automotriz -->
+      <a href="#mecatronica-automotriz" class="program-card-item">
+        <div class="program-card-icon icon-mecanica" aria-hidden="true">
+          <!-- Icono Frontal de Automóvil -->
+          <svg viewBox="0 0 48 48" fill="currentColor">
+            <path d="M40 22.5 36.8 13A4 4 0 0 0 33 10H15a4 4 0 0 0-3.8 3L8 22.5A6 6 0 0 0 6 27v11a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3v-2h20v2a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V27a6 6 0 0 0-2-4.5zM14.6 14h18.8l2 6H12.6l2-6zM12 28a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm24 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+        </div>
+        <h2 class="program-card-title">Mecatrónica<br>Automotriz</h2>
+      </a>
+
+      <!-- Tarjeta 4: Industrias de Alimentos y Bebidas -->
+      <a href="#industrias-alimentos-bebidas" class="program-card-item">
+        <div class="program-card-icon icon-alimentos" aria-hidden="true">
+          <!-- Icono Circular de Industria y Alimentos / Trigo -->
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="16" stroke-dasharray="3 3"/>
+            <circle cx="24" cy="24" r="12" />
+            <!-- Planta/Espiga de alimentos central -->
+            <path d="M24 16v16" stroke-width="2.5" />
+            <path d="M24 20c-3-2-4-5-4-5s3 0 5 2" fill="currentColor" />
+            <path d="M24 20c3-2 4-5 4-5s-3 0-5 2" fill="currentColor" />
+            <path d="M24 26c-3-2-4-5-4-5s3 0 5 2" fill="currentColor" />
+            <path d="M24 26c3-2 4-5 4-5s-3 0-5 2" fill="currentColor" />
+          </svg>
+        </div>
+        <h2 class="program-card-title">Industrias de<br>Alimentos y<br>Bebidas</h2>
+      </a>
+
+      <!-- Tarjeta 5: Producción Agropecuaria -->
+      <a href="#produccion-agropecuaria" class="program-card-item">
+        <div class="program-card-icon icon-agropecuaria" aria-hidden="true">
+          <!-- Icono Pino / Árbol Agropecuario -->
+          <svg viewBox="0 0 48 48" fill="currentColor">
+            <polygon points="24,6 13,20 18,20 10,31 19,31 14,39 34,39 29,31 38,31 30,20 35,20" />
+            <rect x="22" y="39" width="4" height="4" />
+          </svg>
+        </div>
+        <h2 class="program-card-title">Producción<br>Agropecuaria</h2>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       3. BARRA INFERIOR DE "ENLACES DE INTERÉS" Y LOGOS INSTITUCIONALES
+       ==================================================================== -->
+  <section class="interest-links-bar" aria-label="Enlaces de interés institucionales">
+    <div class="interest-links-content">
+      
+      <!-- Título de Enlaces de interés con línea divisoria horizontal -->
+      <div class="interest-links-label-wrap">
+        <span class="interest-links-label">Enlaces de interés.</span>
+        <div class="interest-links-line" aria-hidden="true"></div>
+      </div>
+
+      <!-- Grupo de los 4 logos oficiales mostrados en la imagen -->
+      <div class="interest-logos-group">
+        <!-- Logo MINEDU (Ministerio de Educación) -->
+        <a href="https://www.gob.pe/minedu" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Ministerio de Educación">
+          <img src="../../../assets/images/MINI.png" alt="Logo Ministerio de Educación Perú" class="interest-logo-img">
+        </a>
+
+        <!-- Logo TITULA -->
+        <a href="http://titula.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema TITULA">
+          <img src="../../../assets/images/TITULA.png" alt="Logo Titula Sistema de Grados y Títulos" class="interest-logo-img">
+        </a>
+
+        <!-- Logo REGISTRA -->
+        <a href="https://registra.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema REGISTRA">
+          <img src="../../../assets/images/REGISTA.png" alt="Logo Registra Sistema de Gestión Académica" class="interest-logo-img">
+        </a>
+
+        <!-- Logo AVANZA -->
+        <a href="https://avanza.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema AVANZA">
+          <img src="../../../assets/images/logo-avanza-fondo-2.png" alt="Logo Avanza Sistema de Gestión Docente" class="interest-logo-img">
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</div>

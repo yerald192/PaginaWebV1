@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IESTP Huanta - Portal Institucional</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logos/logo-ies-huanta.png">
+
+  <!-- Estilos del Header y Footer en sus carpetas separadas -->
+  <link rel="stylesheet" href="components/principal/header/header.css">
+  <link rel="stylesheet" href="components/principal/footer/footer.css">
+  
+  <!-- Estilos de la sección Inicio y Botones -->
+  <link rel="stylesheet" href="components/cuerpo/inicio/inicio.css">
+  <link rel="stylesheet" href="components/cuerpo/botones/Organización Institucional/Organización Institucional.css">
+
+  <!-- Estilos Globales de la Página -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ====================================================================
+       1. COMPONENTE HEADER (Replicado de la imagen)
+       Ubicación del código original: components/principal/header/header.html
+       Estilos: components/principal/header/header.css
+       ==================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <!-- Topbar con información de contacto -->
+    <div class="header-topbar">
+      <div class="header-topbar-container">
+        <div class="header-topbar-items">
+          <!-- Teléfono -->
+          <a href="tel:066322296" class="header-topbar-item" title="Teléfono">
+            <span class="header-topbar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </span>
+            <span class="info-text">(066) 322296</span>
+          </a>
+
+          <div class="header-topbar-divider"></div>
+
+          <!-- Ubicación -->
+          <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="header-topbar-item" title="Ubicación">
+            <span class="header-topbar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </span>
+            <span class="info-text">Jr. Córdova Nº 650</span>
+          </a>
+
+          <div class="header-topbar-divider"></div>
+
+          <!-- Correo Institucional -->
+          <a href="mailto:contactos@iestphuanta.edu.pe" class="header-topbar-item" title="Correo Electrónico">
+            <span class="header-topbar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </span>
+            <span class="info-text">contactos@iestphuanta.edu.pe</span>
+          </a>
+
+          <div class="header-topbar-divider"></div>
+
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="header-social-link" title="Síguenos en Facebook" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Navegación Principal -->
+    <div class="header-main-nav">
+      <div class="header-nav-container">
+        
+        <!-- Lado Izquierdo: Fondo Angular Degradado con Logo y Animación de Olas -->
+        <div class="header-brand-wrap">
+          <div class="brand-waves-container" aria-hidden="true">
+            <div class="brand-wave wave-back"></div>
+            <div class="brand-wave wave-mid"></div>
+            <div class="brand-wave wave-front"></div>
+          </div>
+          <a href="#inicio" class="header-brand-logo-link" title="Inicio - IESTP Huanta">
+            <img src="assets/logos/logo-ies-huanta.png" alt="IESTP Huanta Logo" class="header-brand-logo-img">
+          </a>
+        </div>
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button class="header-mobile-toggle" id="headerMobileToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Menú de Enlaces de Navegación con Desplegables -->
+        <nav class="header-menu-nav" id="headerMenuNav" aria-label="Navegación principal">
+          <ul class="header-menu-list">
+            <!-- Nosotros -->
+            <li class="header-menu-item">
+              <a href="#nosotros" class="header-menu-link">
+                Nosotros
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#presentacion">Presentación</a></li>
+                <li class="header-dropdown-item"><a href="#vision-mision-valores">Visión, Misión y Valores</a></li>
+                <li class="header-dropdown-item"><a href="#organizacion-institucional">Organización Institucional</a></li>
+                <li class="header-dropdown-item"><a href="#plana-jerarquica">Plana jerárquica</a></li>
+                <li class="header-dropdown-item"><a href="#plana-docente">Plana docente</a></li>
+                <li class="header-dropdown-item"><a href="#local">Local</a></li>
+              </ul>
+            </li>
+
+            <!-- Programas de estudios -->
+            <li class="header-menu-item">
+              <a href="#programas" class="header-menu-link">
+                Programas de estudios
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#diseno-programacion-web">Diseño y Programación Web</a></li>
+                <li class="header-dropdown-item"><a href="#enfermeria-tecnica">Enfermería Técnica</a></li>
+                <li class="header-dropdown-item"><a href="#mecatronica-automotriz">Mecatrónica Automotriz</a></li>
+                <li class="header-dropdown-item"><a href="#industrias-alimentos-bebidas">Industrias de Alimentos y Bebidas</a></li>
+                <li class="header-dropdown-item"><a href="#produccion-agropecuaria">Producción Agropecuaria</a></li>
+              </ul>
+            </li>
+
+            <!-- Admisión y Matrícula -->
+            <li class="header-menu-item">
+              <a href="#admision" class="header-menu-link">
+                Admisión y Matricula
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#admision-2026">Admisión 2026</a></li>
+                <li class="header-dropdown-item"><a href="#matricula">Matricula</a></li>
+                <li class="header-dropdown-item"><a href="#becas-creditos">Becas y Créditos</a></li>
+              </ul>
+            </li>
+
+            <!-- Transparencia -->
+            <li class="header-menu-item">
+              <a href="#transparencia" class="header-menu-link">
+                Transparencia
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#documentos-de-gestion">Documentos de Gestión</a></li>
+                <li class="header-dropdown-item"><a href="#estadisticas">Estadísticas</a></li>
+                <li class="header-dropdown-item"><a href="#inversiones-recursos-economicos">Inversiones y Recursos Económicos</a></li>
+                <li class="header-dropdown-item"><a href="#libro-de-reclamaciones">Libro de reclamaciones</a></li>
+                <li class="header-dropdown-item"><a href="#licenciamiento">Licenciamiento</a></li>
+              </ul>
+            </li>
+
+            <!-- Trámite -->
+            <li class="header-menu-item">
+              <a href="#tramite" class="header-menu-link">
+                Tramite
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#tupa">Tupa</a></li>
+              </ul>
+            </li>
+
+            <!-- Contáctanos -->
+            <li class="header-menu-item">
+              <a href="#contactanos" class="header-menu-link">
+                Contáctanos
+              </a>
+            </li>
+
+            <!-- Servicios -->
+            <li class="header-menu-item">
+              <a href="#servicios" class="header-menu-link">
+                Servicios
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#biblioteca">Biblioteca</a></li>
+                <li class="header-dropdown-item"><a href="#servicios-complementarios">Servicios complementarios</a></li>
+                <li class="header-dropdown-item"><a href="#bolsa-laboral">Bolsa Laboral</a></li>
+              </ul>
+            </li>
+
+            <!-- Otras páginas -->
+            <li class="header-menu-item">
+              <a href="#otras-paginas" class="header-menu-link">
+                Otras páginas
+                <svg class="header-caret-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+              <ul class="header-dropdown-menu">
+                <li class="header-dropdown-item"><a href="#noticias">Noticias y Eventos</a></li>
+                <li class="header-dropdown-item"><a href="#galeria">Galería Fotográfica</a></li>
+                <li class="header-dropdown-item"><a href="#minedu">Portal MINEDU</a></li>
+                <li class="header-dropdown-item"><a href="#drea">DRE Ayacucho</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       CONTENIDO PRINCIPAL (Demostración de estructura modular)
+       ==================================================================== -->
+  <!-- ====================================================================
+       CONTENIDO DE LA PÁGINA: SECCIÓN INICIO
+       Ubicación del componente: components/cuerpo/inicio/inicio.html
+       Estilos: components/cuerpo/inicio/inicio.css
+       ==================================================================== -->
+  <main id="mainContent">
+    <div class="inicio-wrapper" id="inicioSection">
+
+      <!-- 1. HERO SLIDER BANNER -->
+      <section class="hero-slider" aria-label="Banner principal de bienvenida">
+        <div class="hero-slider-overlay" aria-hidden="true"></div>
+        <div class="hero-slider-scrim" aria-hidden="true"></div>
+
+        <!-- Flecha izquierda -->
+        <button class="slider-arrow-btn slider-arrow-prev" id="sliderPrevBtn" aria-label="Diapositiva anterior" title="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Contenido del Slider -->
+        <div class="hero-slider-container">
+          <div class="hero-slider-content">
+            <div class="hero-badge-tag">
+              INSTITUTO DE EDUCACIÓN SUPERIOR PÚBLICO "HUANTA"
+            </div>
+
+            <h1 class="hero-main-title">
+              Construye tu futuro con<br>
+              formación de calidad
+            </h1>
+
+            <p class="hero-main-desc">
+              El Instituto de Educación Superior Público Huanta se enorgullece de ser un instituto licenciado, lo que garantiza que nuestros programas académicos cumplen con los más altos estándares de calidad establecidos por las autoridades educativas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Flecha derecha -->
+        <button class="slider-arrow-btn slider-arrow-next" id="sliderNextBtn" aria-label="Siguiente diapositiva" title="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </section>
+
+      <!-- 2. TARJETAS FLOTANTES DE LOS 5 PROGRAMAS DE ESTUDIOS -->
+      <section class="programs-cards-container" aria-label="Programas de estudios destacados">
+        <div class="programs-cards-grid">
+          
+          <!-- Tarjeta 1: Diseño y Programación Web -->
+          <a href="#diseno-programacion-web" class="program-card-item">
+            <div class="program-card-icon icon-web" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="8" width="38" height="26" rx="4" />
+                <circle cx="11" cy="14" r="1.5" fill="currentColor" />
+                <circle cx="17" cy="14" r="1.5" fill="currentColor" />
+                <path d="m19 25-4-4 4-4" />
+                <path d="m29 17 4 4-4 4" />
+                <circle cx="36" cy="34" r="6" fill="#ffffff" stroke="currentColor" stroke-width="2.5" />
+                <path d="M36 25v3M36 40v3M27 34h3M42 34h3" />
+              </svg>
+            </div>
+            <h2 class="program-card-title">Diseño y<br>Programación<br>Web</h2>
+          </a>
+
+          <!-- Tarjeta 2: Enfermería Técnica -->
+          <a href="#enfermeria-tecnica" class="program-card-item">
+            <div class="program-card-icon icon-enfermeria" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M38 15h-8v-4a3 3 0 0 0-3-3H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h2a5 5 0 0 0 10 0h14a5 5 0 0 0 10 0h1a2 2 0 0 0 2-2v-9a7 7 0 0 0-7-7zM16 37a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm22 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm3-15h-7v-6h5a4 4 0 0 1 4 4v2z"/>
+                <path d="M16 14h4v3h3v4h-3v3h-4v-3h-3v-4h3z" fill="#ffffff"/>
+              </svg>
+            </div>
+            <h2 class="program-card-title">Enfermería<br>Técnica</h2>
+          </a>
+
+          <!-- Tarjeta 3: Mecatrónica Automotriz -->
+          <a href="#mecatronica-automotriz" class="program-card-item">
+            <div class="program-card-icon icon-mecanica" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <path d="M40 22.5 36.8 13A4 4 0 0 0 33 10H15a4 4 0 0 0-3.8 3L8 22.5A6 6 0 0 0 6 27v11a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3v-2h20v2a3 3 0 0 0 3 3h2a3 3 0 0 0 3-3V27a6 6 0 0 0-2-4.5zM14.6 14h18.8l2 6H12.6l2-6zM12 28a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm24 0a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+            </div>
+            <h2 class="program-card-title">Mecatrónica<br>Automotriz</h2>
+          </a>
+
+          <!-- Tarjeta 4: Industrias de Alimentos y Bebidas -->
+          <a href="#industrias-alimentos-bebidas" class="program-card-item">
+            <div class="program-card-icon icon-alimentos" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="24" cy="24" r="16" stroke-dasharray="3 3"/>
+                <circle cx="24" cy="24" r="12" />
+                <path d="M24 16v16" stroke-width="2.5" />
+                <path d="M24 20c-3-2-4-5-4-5s3 0 5 2" fill="currentColor" />
+                <path d="M24 20c3-2 4-5 4-5s-3 0-5 2" fill="currentColor" />
+                <path d="M24 26c-3-2-4-5-4-5s3 0 5 2" fill="currentColor" />
+                <path d="M24 26c3-2 4-5 4-5s-3 0-5 2" fill="currentColor" />
+              </svg>
+            </div>
+            <h2 class="program-card-title">Industrias de<br>Alimentos y<br>Bebidas</h2>
+          </a>
+
+          <!-- Tarjeta 5: Producción Agropecuaria -->
+          <a href="#produccion-agropecuaria" class="program-card-item">
+            <div class="program-card-icon icon-agropecuaria" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="currentColor">
+                <polygon points="24,6 13,20 18,20 10,31 19,31 14,39 34,39 29,31 38,31 30,20 35,20" />
+                <rect x="22" y="39" width="4" height="4" />
+              </svg>
+            </div>
+            <h2 class="program-card-title">Producción<br>Agropecuaria</h2>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- 3. BARRA INFERIOR DE "ENLACES DE INTERÉS" Y LOGOS -->
+      <section class="interest-links-bar" aria-label="Enlaces de interés institucionales">
+        <div class="interest-links-content">
+          <div class="interest-links-label-wrap">
+            <span class="interest-links-label">Enlaces de interés.</span>
+            <div class="interest-links-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="interest-logos-group">
+            <a href="https://www.gob.pe/minedu" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Ministerio de Educación">
+              <img src="assets/images/MINI.png" alt="Logo Ministerio de Educación Perú" class="interest-logo-img">
+            </a>
+            <a href="http://titula.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema TITULA">
+              <img src="assets/images/TITULA.png" alt="Logo Titula Sistema de Grados y Títulos" class="interest-logo-img">
+            </a>
+            <a href="https://registra.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema REGISTRA">
+              <img src="assets/images/REGISTA.png" alt="Logo Registra Sistema de Gestión Académica" class="interest-logo-img">
+            </a>
+            <a href="https://avanza.minedu.gob.pe/" target="_blank" rel="noopener noreferrer" class="interest-logo-link" title="Sistema AVANZA">
+              <img src="assets/images/logo-avanza-fondo-2.png" alt="Logo Avanza Sistema de Gestión Docente" class="interest-logo-img">
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- /#inicioSection -->
+
+    <!-- ====================================================================
+         CONTENIDO DE LA PÁGINA: SECCIÓN ORGANIZACIÓN INSTITUCIONAL
+         Ubicación del componente: components/cuerpo/botones/Organización Institucional/
+         Estilos: components/cuerpo/botones/Organización Institucional/Organización Institucional.css
+         ==================================================================== -->
+    <div class="organizacion-institucional-wrapper" id="organizacionSection" style="display: none;">
+
+      <!-- 1. BANNER DE TÍTULO SUPERIOR (Con imagen de fondo institucional) -->
+      <section class="page-title" aria-label="Encabezado de Organización Institucional">
+        <div class="container">
+          <h1>Organización Institucional</h1>
+          <ul class="breadcrumb-list" aria-label="Miga de pan">
+            <li>
+              <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="current" aria-current="page">Organización Institucional</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2. CONTENIDO PRINCIPAL: DESCRIPCIÓN Y ORGANIGRAMA -->
+      <section class="content">
+        <div class="container">
+          <div class="content-header">
+            <h2>Organización Institucional</h2>
+          </div>
+
+          <p class="content-description">
+            En el Instituto de Educación Superior Tecnológico Público Huanta, trabajamos en equipo para garantizar una gestión eficaz y una experiencia educativa de calidad para nuestros estudiantes. Nuestro organigrama refleja la estructura organizativa de nuestra institución, así como las funciones y responsabilidades de cada área. A continuación, presentamos nuestro organigrama actualizado:
+          </p>
+
+          <!-- Tarjeta con imagen del Organigrama institucional -->
+          <div class="organigrama-card">
+            <img src="assets/images/nuevo-organigrama.png" 
+                 onerror="this.onerror=null; this.src='https://iestphuanta.edu.pe/wp-content/uploads/2026/05/NUEVO-ORGANIGRAMA-1024x721.png';" 
+                 alt="Organigrama Institucional IESTP Huanta" 
+                 class="organigrama-img" 
+                 id="organigramaImage"
+                 title="Clic para ampliar el organigrama">
+            
+            <div class="organigrama-hint">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="11" y1="8" x2="11" y2="14"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+              <span>Haz clic en la imagen para ampliar en pantalla completa</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Lightbox para visualización ampliada -->
+      <div class="organigrama-modal" id="organigramaModal" aria-hidden="true" role="dialog" aria-label="Visualizador del organigrama en tamaño completo">
+        <div class="organigrama-modal-content">
+          <button class="organigrama-modal-close" id="organigramaModalClose" aria-label="Cerrar vista ampliada">&times;</button>
+          <img src="assets/images/nuevo-organigrama.png" 
+               onerror="this.onerror=null; this.src='https://iestphuanta.edu.pe/wp-content/uploads/2026/05/NUEVO-ORGANIGRAMA-1024x721.png';" 
+               alt="Organigrama Institucional ampliado" 
+               class="organigrama-modal-img">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ====================================================================
+       2. COMPONENTE FOOTER (Replicado de la imagen)
+       Ubicación del código original: components/principal/footer/footer.html
+       Estilos: components/principal/footer/footer.css
+       ==================================================================== -->
+  <footer class="site-footer" id="mainFooter">
+    <!-- Facetas angulares oscuras de fondo -->
+    <div class="footer-background-facets" aria-hidden="true">
+      <div class="footer-facet-left"></div>
+      <div class="footer-facet-right"></div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-grid">
+        
+        <!-- Columna 1: Logo e Identidad Institucional -->
+        <div class="footer-col-brand">
+          <a href="#inicio" class="footer-brand-logo-link" title="Inicio - IESTP Huanta">
+            <img src="assets/logos/logo-ies-huanta.png" alt="IESTP Huanta Logo" class="footer-brand-logo">
+          </a>
+          <p class="footer-brand-text">
+            Instituto de Educación Superior<br>
+            Público "Huanta"
+          </p>
+        </div>
+
+        <!-- Columna 2: Facebook -->
+        <div class="footer-col-facebook">
+          <h3 class="footer-heading">Facebook</h3>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Página oficial de Facebook" aria-label="Facebook Oficial">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Columna 3: Información -->
+        <div class="footer-col-info">
+          <h3 class="footer-heading">Información</h3>
+          <ul class="footer-info-list">
+            <!-- Dirección -->
+            <li class="footer-info-item">
+              <span class="footer-info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </span>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="footer-info-link">
+                Jr. Córdova Nº 650
+              </a>
+            </li>
+
+            <!-- Teléfono -->
+            <li class="footer-info-item">
+              <span class="footer-info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <a href="tel:066322296" class="footer-info-link">
+                Teléfono: (066) 322296
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Horario de atención -->
+        <div class="footer-col-schedule">
+          <h3 class="footer-heading">Horario de atención</h3>
+          <p class="footer-schedule-text">
+            Lun. - Vier. 7:30 am - 1:15 pm
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Barra Inferior: Derechos de Autor -->
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        &copy; <span id="currentYear">2026</span> Instituto de Educación Superior Público "Huanta"
+      </p>
+    </div>
+
+    <!-- Botón Flotante Subir al Inicio -->
+    <button class="footer-scroll-top" id="footerScrollTop" aria-label="Volver al inicio de la página" title="Subir al inicio">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+  </footer>
+
+  <!-- Scripts funcionales -->
+  <script src="components/principal/header/header.js"></script>
+  <script src="components/principal/footer/footer.js"></script>
+  <script src="components/cuerpo/inicio/inicio.js"></script>
+  <script src="components/cuerpo/botones/Organización Institucional/Organización Institucional.js"></script>
+  <script src="js/navigation.js"></script>
+
+</body>
+</html>
