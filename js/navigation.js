@@ -45,10 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
       window.initPlanaDocenteView();
     }
 
-    // Cerrar menú móvil si está desplegado
-    if (menuNav && menuNav.classList.contains('active')) {
-      menuNav.classList.remove('active');
-      if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+    // Cerrar menús desplegables y menú móvil inmediatamente al cambiar de sección
+    if (typeof window.closeHeaderDropdowns === 'function') {
+      window.closeHeaderDropdowns();
+    } else {
+      if (menuNav && menuNav.classList.contains('active')) {
+        menuNav.classList.remove('active');
+        if (mobileToggle) mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+      if (document.activeElement && typeof document.activeElement.blur === 'function') {
+        document.activeElement.blur();
+      }
     }
 
     // Scroll suave hacia la parte superior

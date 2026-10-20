@@ -341,6 +341,17 @@
   transform: translateY(0);
 }
 
+/* Forzar cierre inmediato al seleccionar una opción */
+.header-menu-item.dropdown-closed .header-dropdown-menu,
+.header-menu-item.dropdown-closed:hover .header-dropdown-menu,
+.header-menu-item.dropdown-closed:focus-within .header-dropdown-menu {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(10px) !important;
+  display: none !important;
+}
+
 .header-dropdown-item a {
   display: flex;
   align-items: center;
