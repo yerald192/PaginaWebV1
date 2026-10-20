@@ -1,0 +1,458 @@
+/* ==========================================================================
+   LOCAL / LOCALES - IESTP HUANTA
+   Ubicación: components/cuerpo/botones/local/
+   ========================================================================== */
+
+.local-view-wrapper {
+  width: 100%;
+  position: relative;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  overflow: hidden;
+  animation: fadeInView 0.35s ease-in-out;
+}
+
+/* --------------------------------------------------
+   1. Banner Hero Superior (Locales)
+   -------------------------------------------------- */
+.local-view-wrapper .local-hero-banner {
+  position: relative;
+  background: linear-gradient(rgba(10, 20, 42, 0.72), rgba(15, 23, 42, 0.82)),
+              url('../../../../assets/images/vision-mision-bg.jpg') center center / cover no-repeat,
+              #1b2a49;
+  color: #ffffff;
+  padding: 85px 20px 80px 20px;
+  text-align: center;
+  box-shadow: inset 0 -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.local-view-wrapper .local-hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.local-view-wrapper .local-hero-title {
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.local-view-wrapper .local-hero-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+.local-view-wrapper .local-hero-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.local-view-wrapper .local-hero-breadcrumb a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.local-view-wrapper .local-hero-breadcrumb .separator {
+  color: #38bdf8;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.local-view-wrapper .local-hero-breadcrumb .current {
+  color: #cbd5e1;
+}
+
+/* --------------------------------------------------
+   2. Sección Principal de Información del Local
+   -------------------------------------------------- */
+.local-view-wrapper .local-info-section {
+  position: relative;
+  padding: 90px 20px 75px 20px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Fondo decorativo angular a la derecha (azul-morado con circuitos) */
+.local-view-wrapper .local-tech-bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 52%;
+  height: 100%;
+  background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 45%, #7c3aed 100%);
+  clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.local-view-wrapper .local-tech-circuits-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/images/h3-shape1.png');
+  background-size: cover;
+  background-position: center right;
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Decoraciones tenues en el lado izquierdo */
+.local-view-wrapper .local-tech-arrows-left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #e2e8f0;
+  letter-spacing: -6px;
+  font-weight: 900;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+/* Cuadrícula de puntos azules central superior */
+.local-view-wrapper .local-dots-pattern {
+  position: absolute;
+  top: 35px;
+  left: 48%;
+  width: 85px;
+  height: 85px;
+  background-image: radial-gradient(#6366f1 2px, transparent 2px);
+  background-size: 14px 14px;
+  z-index: 2;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.local-view-wrapper .local-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.local-view-wrapper .local-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 55px;
+  align-items: center;
+}
+
+/* Columna Izquierda: Información de la Sede */
+.local-view-wrapper .local-col-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.local-view-wrapper .local-badge-sub {
+  color: #6366f1;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.local-view-wrapper .local-main-heading {
+  margin-bottom: 22px;
+  line-height: 1.15;
+}
+
+.local-view-wrapper .local-title-publico {
+  display: block;
+  font-size: 44px;
+  font-weight: 800;
+  color: #1d4ed8;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+/* Trazo decorativo morado debajo de Público */
+.local-view-wrapper .local-heading-wave {
+  width: 90px;
+  height: 10px;
+  display: block;
+  margin: 2px 0 6px 0;
+}
+
+.local-view-wrapper .local-title-huanta {
+  display: block;
+  font-size: 44px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.local-view-wrapper .local-paragraph-desc {
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: #475569;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+.local-view-wrapper .local-sede-box {
+  margin-bottom: 22px;
+}
+
+.local-view-wrapper .local-sede-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.local-view-wrapper .local-sede-address {
+  font-size: 14px;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Pastilla de Contacto Telefónico */
+.local-view-wrapper .local-contact-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #f1f5f9;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 22px;
+  align-self: flex-start;
+  transition: all 0.2s ease;
+}
+
+.local-view-wrapper .local-contact-card:hover {
+  background: #ffffff;
+  border-color: #93c5fd;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.1);
+}
+
+.local-view-wrapper .local-contact-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.local-view-wrapper .local-contact-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.local-view-wrapper .local-contact-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.local-view-wrapper .local-contact-label {
+  font-size: 11.5px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.local-view-wrapper .local-contact-phone {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.local-view-wrapper .local-schedule-box {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.local-view-wrapper .local-schedule-box strong {
+  color: #0f172a;
+}
+
+/* Columna Derecha: Slider de Fotos del Local */
+.local-view-wrapper .local-col-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.local-view-wrapper .local-card-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+  border: 4px solid #ffffff;
+  background: #0f172a;
+}
+
+.local-view-wrapper .local-slide-item {
+  display: none;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.local-view-wrapper .local-slide-item.active {
+  display: block;
+  animation: fadeInView 0.4s ease;
+}
+
+/* Puntos de navegación del slider */
+.local-view-wrapper .local-slider-dots {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.local-view-wrapper .local-dot-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.local-view-wrapper .local-dot-btn:hover {
+  transform: scale(1.15);
+}
+
+.local-view-wrapper .local-dot-outer {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.local-view-wrapper .local-dot-inner {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #334155;
+  transition: all 0.25s ease;
+}
+
+.local-view-wrapper .local-dot-btn.active .local-dot-outer {
+  border-color: #0284c7;
+}
+
+.local-view-wrapper .local-dot-btn.active .local-dot-inner {
+  background: #0284c7;
+  width: 6px;
+  height: 6px;
+}
+
+/* --------------------------------------------------
+   3. Sección Inferior: Mapa de Google Maps
+   -------------------------------------------------- */
+.local-view-wrapper .local-map-section {
+  padding: 30px 20px 90px 20px;
+  background-color: #ffffff;
+}
+
+.local-view-wrapper .local-map-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.local-view-wrapper .local-map-intro-text {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 35px;
+  padding: 0 10px;
+}
+
+.local-view-wrapper .local-map-frame {
+  width: 100%;
+  height: 440px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.local-view-wrapper .local-map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* --------------------------------------------------
+   4. Responsividad
+   -------------------------------------------------- */
+@media (max-width: 991px) {
+  .local-view-wrapper .local-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .local-view-wrapper .local-tech-bg-right {
+    display: none;
+  }
+
+  .local-view-wrapper .local-dots-pattern {
+    display: none;
+  }
+
+  .local-view-wrapper .local-hero-title {
+    font-size: 28px;
+  }
+
+  .local-view-wrapper .local-hero-banner {
+    padding: 60px 16px;
+  }
+
+  .local-view-wrapper .local-title-publico,
+  .local-view-wrapper .local-title-huanta {
+    font-size: 34px;
+  }
+
+  .local-view-wrapper .local-card-frame {
+    max-width: 100%;
+  }
+
+  .local-view-wrapper .local-slide-item {
+    height: 280px;
+  }
+
+  .local-view-wrapper .local-map-frame {
+    height: 350px;
+  }
+}

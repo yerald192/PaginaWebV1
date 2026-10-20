@@ -1,13 +1,17 @@
 /**
  * Navigation Router - IESTP Huanta
- * Controla la transición dinámica entre Inicio, Presentación, Organización Institucional, Plana Jerárquica y demás vistas.
+ * Controla la transición dinámica entre Inicio, Presentación, Visión Misión Valores,
+ * Organización Institucional, Plana Jerárquica, Local y demás vistas.
  */
 document.addEventListener('DOMContentLoaded', () => {
   const views = {
     'inicio': document.getElementById('inicioSection'),
     'presentacion': document.getElementById('presentacionSection'),
+    'vision-mision-valores': document.getElementById('visionMisionSection'),
     'organizacion-institucional': document.getElementById('organizacionSection'),
-    'plana-jerarquica': document.getElementById('planaJerarquicaSection')
+    'plana-jerarquica': document.getElementById('planaJerarquicaSection'),
+    'plana-docente': document.getElementById('planaDocenteSection'),
+    'local': document.getElementById('localSection')
   };
 
   const menuNav = document.getElementById('headerMenuNav');
@@ -27,9 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Si la vista es presentación, ejecutar la animación del contador y configurar video
+    // Disparadores específicos por vista
     if (activeKey === 'presentacion' && typeof window.initPresentacionView === 'function') {
       window.initPresentacionView();
+    }
+    if (activeKey === 'vision-mision-valores' && typeof window.initVisionMisionTabs === 'function') {
+      window.initVisionMisionTabs();
+    }
+    if (activeKey === 'local' && typeof window.initLocalSlider === 'function') {
+      window.initLocalSlider();
+    }
+    if (activeKey === 'plana-docente' && typeof window.initPlanaDocenteView === 'function') {
+      window.initPlanaDocenteView();
     }
 
     // Cerrar menú móvil si está desplegado

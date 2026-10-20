@@ -1,0 +1,182 @@
+<!-- ====================================================================
+     COMPONENTE: VISIÓN, MISIÓN Y VALORES
+     Ubicación: components/cuerpo/botones/vision-mision-valores/
+     Estilos: components/cuerpo/botones/vision-mision-valores/vision-mision-valores.css
+     ==================================================================== -->
+<div class="vision-mision-wrapper" id="visionMisionSection">
+
+  <!-- ====================================================================
+       1. BANNER HERO SUPERIOR (Graduación y título centrado)
+       ==================================================================== -->
+  <section class="vm-hero-banner" aria-label="Banner de Visión, Misión y Valores">
+    <div class="vm-deco-circle" aria-hidden="true"></div>
+    <div class="vm-hero-container">
+      <h1 class="vm-hero-title">Visión, Misión y Valores</h1>
+      <div class="vm-hero-breadcrumb">
+        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">Home</a>
+        <span class="separator">»</span>
+        <span class="current">Visión, Misión y Valores</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       2. NAVEGACIÓN POR PESTAÑAS (TABS CENTRADOS)
+       ==================================================================== -->
+  <section class="vm-tabs-section">
+    <div class="vm-tabs-nav-container">
+      <ul class="vm-tabs-nav" role="tablist">
+        <li role="presentation">
+          <button class="vm-tab-btn active" id="tabBtnMision" data-target="paneMision" role="tab" aria-selected="true" aria-controls="paneMision">
+            Nuestra Misión
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="vm-tab-btn" id="tabBtnVision" data-target="paneVision" role="tab" aria-selected="false" aria-controls="paneVision">
+            Nuestra Visión
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="vm-tab-btn" id="tabBtnValores" data-target="paneValores" role="tab" aria-selected="false" aria-controls="paneValores">
+            Valores Institucionales
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       3. CONTENIDO DE LAS PESTAÑAS
+       ==================================================================== -->
+  <section class="vm-content-area">
+    <div class="vm-container">
+
+      <!-- PANE 1: NUESTRA MISIÓN (Visible por defecto, como en la imagen) -->
+      <div class="vm-tab-pane active" id="paneMision" role="tabpanel" aria-labelledby="tabBtnMision">
+        <div class="vm-grid">
+          
+          <!-- Lado Izquierdo: Composición Gráfica -->
+          <div class="vm-visual-wrap">
+            <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
+            <div class="vm-dots-pattern" aria-hidden="true"></div>
+            <div class="vm-photo-backdrop" aria-hidden="true"></div>
+            <div class="vm-photo-card">
+              <img src="assets/images/mision.jpg" alt="Estudiantes en ceremonia de graduación juramentando" class="vm-photo-img">
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Contenido de Misión -->
+          <div class="vm-text-wrap">
+            <span class="vm-section-badge">Misión</span>
+            <p class="vm-paragraph">
+              Al 2031, somos un IES de excelencia, licenciada, que lidera en la formación integral de profesionales competitivos, innovadores, fomentamos el emprendimiento, la calidad en nuestros productos y servicios, reconocidos a nivel regional y nacional por la formación de profesionales comprometidos con la calidad y cuidado del medio ambiente.
+            </p>
+            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
+              <span>Sobre Nosotros</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PANE 2: NUESTRA VISIÓN -->
+      <div class="vm-tab-pane" id="paneVision" role="tabpanel" aria-labelledby="tabBtnVision">
+        <div class="vm-grid">
+          
+          <!-- Lado Izquierdo: Composición Gráfica -->
+          <div class="vm-visual-wrap">
+            <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
+            <div class="vm-dots-pattern" aria-hidden="true"></div>
+            <div class="vm-photo-backdrop" aria-hidden="true"></div>
+            <div class="vm-photo-card">
+              <img src="assets/images/vision.png" alt="Visión del IESTP Huanta" class="vm-photo-img">
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Contenido de Visión -->
+          <div class="vm-text-wrap">
+            <span class="vm-section-badge">Visión</span>
+            <p class="vm-paragraph">
+              Al 2030, somos un IES que lidera en la formación integral de profesionales competitivos, innovadores, fomentamos el emprendimiento, la calidad en nuestros productos y servicios, con sentido de cuidado del medio ambiente y que aportan al desarrollo económico de la región.
+            </p>
+            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
+              <span>Sobre Nosotros</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PANE 3: VALORES INSTITUCIONALES -->
+      <div class="vm-tab-pane" id="paneValores" role="tabpanel" aria-labelledby="tabBtnValores">
+        <div class="vm-grid">
+          
+          <!-- Lado Izquierdo: Composición Gráfica -->
+          <div class="vm-visual-wrap">
+            <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
+            <div class="vm-dots-pattern" aria-hidden="true"></div>
+            <div class="vm-photo-backdrop" aria-hidden="true"></div>
+            <div class="vm-photo-card">
+              <img src="assets/images/valores.jpg" alt="Valores Institucionales IESTP Huanta" class="vm-photo-img">
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Lista de Valores -->
+          <div class="vm-text-wrap">
+            <span class="vm-section-badge">Valores Institucionales</span>
+            
+            <div class="vm-values-grid">
+              <div class="vm-value-item">
+                <div class="vm-value-icon">
+                  <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <span class="vm-value-title">Innovación</span>
+              </div>
+              <div class="vm-value-item">
+                <div class="vm-value-icon">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <span class="vm-value-title">Excelencia</span>
+              </div>
+              <div class="vm-value-item">
+                <div class="vm-value-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <span class="vm-value-title">Compromiso</span>
+              </div>
+              <div class="vm-value-item">
+                <div class="vm-value-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <span class="vm-value-title">Puntualidad</span>
+              </div>
+            </div>
+
+            <p class="vm-paragraph" style="margin-bottom: 25px;">
+              Nuestros valores orientan la labor académica y formativa de docentes y estudiantes, promoviendo una convivencia basada en el respeto, la ética y el servicio a la comunidad.
+            </p>
+
+            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
+              <span>Sobre Nosotros</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>

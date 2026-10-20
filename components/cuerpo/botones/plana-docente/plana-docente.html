@@ -1,0 +1,663 @@
+<!-- ====================================================================
+     COMPONENTE: PLANA DOCENTE
+     Ubicación: components/cuerpo/botones/plana-docente/
+     Estilos: components/cuerpo/botones/plana-docente/plana-docente.css
+     ==================================================================== -->
+<div class="plana-docente-wrapper" id="planaDocenteSection">
+
+  <!-- ====================================================================
+       1. BANNER HERO SUPERIOR (Plana docente)
+       ==================================================================== -->
+  <section class="docente-hero-banner" aria-label="Banner de Plana Docente">
+    <div class="docente-hero-container">
+      <h1 class="docente-hero-title">Plana docente</h1>
+      <div class="docente-hero-breadcrumb">
+        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">Home</a>
+        <span class="separator">»</span>
+        <span class="current">Plana docente</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       2. CONTROLES: BÚSQUEDA Y FILTROS POR PROGRAMA
+       ==================================================================== -->
+  <section class="docente-controls-section">
+    <div class="docente-search-bar">
+      <div class="docente-search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="docenteSearchInput" class="docente-search-input" placeholder="Buscar por docente, unidad didáctica o curso...">
+      </div>
+
+      <div class="docente-stats-badge">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Total Docentes: <strong id="docenteTotalCount">27</strong></span>
+      </div>
+    </div>
+
+    <!-- Pestañas de filtrado por programa -->
+    <div class="docente-tabs-nav" id="docenteTabsNav">
+      <button class="docente-tab-btn active" data-filter="all">
+        <i class="fa-solid fa-border-all"></i> Todos los Programas
+      </button>
+      <button class="docente-tab-btn" data-filter="dpw">
+        <i class="fa-solid fa-laptop-code"></i> Diseño y Prog. Web
+      </button>
+      <button class="docente-tab-btn" data-filter="et">
+        <i class="fa-solid fa-user-nurse"></i> Enfermería Técnica
+      </button>
+      <button class="docente-tab-btn" data-filter="ma">
+        <i class="fa-solid fa-car"></i> Mecatrónica Automotriz
+      </button>
+      <button class="docente-tab-btn" data-filter="iab">
+        <i class="fa-solid fa-apple-whole"></i> Industrias de Alimentos
+      </button>
+      <button class="docente-tab-btn" data-filter="pa">
+        <i class="fa-solid fa-seedling"></i> Prod. Agropecuaria
+      </button>
+      <button class="docente-tab-btn" data-filter="emp">
+        <i class="fa-solid fa-briefcase"></i> Empleabilidad
+      </button>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       3. CONTENIDO PRINCIPAL: TABLAS DE DOCENTES POR PROGRAMA
+       ==================================================================== -->
+  <main class="docente-main-content">
+
+    <!-- PROGRAMA 1: DISEÑO Y PROGRAMACIÓN WEB -->
+    <article class="docente-program-block" data-program="dpw" id="prog-dpw">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h2 class="docente-program-title">DISEÑO Y PROGRAMACIÓN WEB</h2>
+        </div>
+        <span class="docente-count-pill">6 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparte</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">MORENO MÁRQUEZ, Alfonso Álvaro</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">COMUNICACIÓN ORAL, SOLUCIÓN DE PROBLEMAS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1I_gwXck8319NNl5ffXT5QN5Z5kV2DFQt/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">TORRES LOZANO, Juan Carlos</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">FUNDAMENTOS DE PROGRAMACIÓN, PROGRAMACIÓN ORIENTADA A OBJETOS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/open?id=1t4BfPvBK-Vby01TOQRRiUwLUJlVFreQT" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">BANDO GÓMEZ, Kevin Vlaes</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">GESTIÓN Y ADMINISTRACIÓN DE SITIOS WEB, DIAGRAMACIÓN DIGITAL, REDES E INTERNET, MARKETING DIGITAL</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/kevin-bando-gomez.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/kevin-bando-gomez.pdf" download="CV-Kevin-Bando-Gomez.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">YUCRA CURO, Aníbal</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">ADMINISTRACIÓN DE BASE DE DATOS, PROGRAMACIÓN DE APLICACIONES WEB, DISEÑO DE SOLUCIONES WEB</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/open?id=16PAZj0sWXq57pleAYKp4UrMt1PRL7bCC" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">ALEGRIA ÑACCHA, Cristhian</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">INTRODUCCIÓN A BASE DE DATOS, DISEÑO DE INTERFACES WEB Y PROGRAMACIÓN DE APLICACIONES MÓVILES</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/cristhian-alegria-naccha.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/cristhian-alegria-naccha.pdf" download="CV-Cristhian-Alegria.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">PARIONA AROTINCO, Jenry E.</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">Especialidad de Diseño y Programación Web</div>
+              </td>
+              <td>
+                <span class="btn-cv-empty"><i class="fa-solid fa-clock"></i> En trámite</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- PROGRAMA 2: ENFERMERÍA TÉCNICA -->
+    <article class="docente-program-block" data-program="et" id="prog-et">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-user-nurse"></i></div>
+          <h2 class="docente-program-title">ENFERMERÍA TÉCNICA</h2>
+        </div>
+        <span class="docente-count-pill">4 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparten</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">LIRA HUAMÁN, Ismael</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">EDUCACIÓN PARA LA SALUD - ATENCIÓN DEL ADULTO Y ADULTO MAYOR</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1nYKeoXZ17-dQjQKIiPJr7vGGWczoWln7/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">QUIQUIN CONGA, Constancia</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">ADMINISTRACIÓN DE MEDICAMENTOS, ASISTENCIA BÁSICA HOSPITALARIA, SALUD MATERNO NEONATAL</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1fTEfrAavmQVZYJJA26ILEWYyiKtkkF28/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">CÁRDENAS PÉREZ, Ketty Shirly</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">SEGURIDAD Y SALUD EN EL TRABAJO, DOCUMENTACIÓN EN SALUD - ATENCIÓN DEL NIÑO Y ADOLESCENTE - ATENCIÓN AL USUARIO QUIRÚRGICO.</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/open?id=1BWTgAQ03yT7IcizXI7w6EuXnXWskGapH" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">HUAMÁN BARZOLA, Ida René</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">SALUD COMUNITARIA, PROMOCIÓN DE LA SALUD, ASISTENCIA EN INMUNIZACIONES</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/ida-rene-huaman-barzola.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/ida-rene-huaman-barzola.pdf" download="CV-Ida-Rene-Huaman.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- PROGRAMA 3: MECATRÓNICA AUTOMOTRIZ -->
+    <article class="docente-program-block" data-program="ma" id="prog-ma">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-car"></i></div>
+          <h2 class="docente-program-title">MECATRÓNICA AUTOMOTRIZ</h2>
+        </div>
+        <span class="docente-count-pill">5 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparte</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">LUDEÑA ARANDA, Juan Renan</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">MOTORES OTTO, SISTEMA DE IMPLEMENTOS Y CONFORT</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1ytYAtBRvBJ9lxZRwhGkltm7orilrkANm/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">PALOMINO GONZALES, Daniel</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">MANTENIMIENTO AUTOMOTRIZ, SISTEMA DE ENCENDIDO AUTOMOTRIZ, INYECCIÓN ELECTRÓNICA OTTO</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1FYO_J0UXymcZVT-Qu8WQZNX4ZOavO02N/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">VÍLCHEZ MOLINA, José Luis</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">MECÁNICA DE TALLER AUTOMOTRIZ, SEGURIDAD LABORAL, SISTEMA DE CARGA Y ARRANQUE, CÁLCULOS APLICADOS AL MOTOR DE COMBUSTIÓN INTERNA</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1Ow5Y7z06hOspDVj-BmB10HFUZ3nJiXzi/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">RONDINEL OCHANTE, Remigio</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">SISTEMA DE LUCES, COMUNICACIÓN ORAL</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/remigio-rondinel-ochante.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/remigio-rondinel-ochante.pdf" download="CV-Remigio-Rondinel.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">ANDÍA ..., Joel</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">MANTENIMIENTO PREVENTIVO DE LA SUSPENSIÓN, DIRECCIÓN Y FRENOS; SEGURIDAD LABORAL; MANTENIMIENTO PREVENTIVO DEL SISTEMA ELÉCTRICO.</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/joel-andia.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/joel-andia.pdf" download="CV-Joel-Andia.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- PROGRAMA 4: INDUSTRIAS DE ALIMENTOS Y BEBIDAS -->
+    <article class="docente-program-block" data-program="iab" id="prog-iab">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-apple-whole"></i></div>
+          <h2 class="docente-program-title">INDUSTRIAS DE ALIMENTOS Y BEBIDAS</h2>
+        </div>
+        <span class="docente-count-pill">6 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparte</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">ANDIA OVALLE, Ernesto</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">PROCESAMIENTO DE GRANOS Y TUBÉRCULOS, FUNDAMENTOS DE INNOVACIÓN TECNOLÓGICA</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1g3SH2oylbp8l7WEyA51v6lJ89PUBEvMK/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">PAUCARHUANCA YARIHUAMÁN, Yude Katia</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">QUÍMICA APLICADA, PROCESAMIENTO DE PRODUCTOS LÁCTEOS, FUNDAMENTOS DEL ENVASADO Y EMBALADO DE ALIMENTOS, COMPRENSIÓN Y REDACCIÓN EN INGLÉS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/yude-katia-paucarhuanca.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/yude-katia-paucarhuanca.pdf" download="CV-Yude-Katia-Paucarhuanca.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">MATOS LOPE, Bret Olivier</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">BUENAS PRÁCTICAS DE MANUFACTURA, RECEPCIÓN DE MATERIAS PRIMAS E INSUMOS, CONSERVACIÓN Y ALMACENAMIENTO DE ALIMENTOS, EMPAQUE Y EMBALAJE DE PRODUCTOS ALIMENTICIOS.</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/bret-olivier-matos-lope.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/bret-olivier-matos-lope.pdf" download="CV-Bret-Olivier-Matos.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">TAYPE MUCHA, Gerson Uriel</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">ALMACENAMIENTO DE MATERIAS PRIMAS E INSUMOS, ANÁLISIS DE ALIMENTOS, BIOQUÍMICA DE ALIMENTOS, LOGÍSTICA DE PRODUCTOS TERMINADOS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1jQFYqHro9h5VyQKXPrQ_iOBn-YW9sNuU/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">RODRÍGUEZ LAOS, Nancy Beatriz</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">PROCESAMIENTO DE PRODUCTOS CÁRNICOS E HIDROBIOLÓGICOS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/open?id=1lkvS-yxm8c47sEyRE-mzJR1VH4YMclMp" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">P. P., Kike Saduth</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">GESTIÓN DEL ENVASADO Y EMBALADO DE ALIMENTOS; EQUIPOS DE ENVASADO, EMBALADO Y ETIQUETADO DE ALIMENTOS; MAQUINARIAS Y EQUIPOS EN LA RECEPCIÓN Y CLASIFICACIÓN DE LA MATERIA PRIMA; COMUNICACIÓN ORAL; INSTALACIONES PARA LA CRIANZA ANIMAL</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/kike-saduth-pp.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/kike-saduth-pp.pdf" download="CV-Kike-Saduth.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- PROGRAMA 5: PRODUCCIÓN AGROPECUARIA -->
+    <article class="docente-program-block" data-program="pa" id="prog-pa">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h2 class="docente-program-title">PRODUCCIÓN AGROPECUARIA</h2>
+        </div>
+        <span class="docente-count-pill">4 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparte</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">ALEJANDRO SALAZAR, René Ángel</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">TOPOGRAFÍA AGRÍCOLA Y OPERACIÓN DE SISTEMAS DE RIEGO</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1NoK-VMEnxkL_cFovNhEie7xylVmH2Ces/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">Docente Especialista P.A.</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">TÉCNICAS DE MEJORAMIENTO ANIMAL, PRODUCCIÓN DE CUYES Y CONEJOS Y CONTROL DE ENFERMEDADES PARASITARIAS.</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/12Lg-XOmih2mlNzMBz36e8GatwVDozIR9/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">ANTEZANA CESAR, Merida Luz</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">INSTALACIONES AGROPECUARIAS, ANATOMÍA Y FISIOLOGÍA ANIMAL, CONTROL DE ENFERMEDADES METABÓLICAS E INFECCIOSAS Y MANEJO Y CONTROL DE ENFERMEDADES AGRÍCOLAS.</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/merida-luz-antezana-cesar.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/merida-luz-antezana-cesar.pdf" download="CV-Merida-Luz-Antezana.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">ANTEZANA CESAR, Merida Luz (Especialidad)</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">MANEJO Y CONSERVACIÓN DE SUELOS, MECANIZACIÓN AGRÍCOLA, NUTRICIÓN Y ALIMENTACIÓN ANIMAL Y MANEJO INTEGRADO DE PLAGAS AGRÍCOLAS</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/merida-luz-antezana-cesar-2.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/merida-luz-antezana-cesar-2.pdf" download="CV-Merida-Luz-Antezana-2.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- PROGRAMA 6: DOCENTES EMPLEABILIDAD -->
+    <article class="docente-program-block" data-program="emp" id="prog-emp">
+      <div class="docente-program-header">
+        <div class="docente-program-title-box">
+          <div class="docente-program-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h2 class="docente-program-title">DOCENTES DE EMPLEABILIDAD</h2>
+        </div>
+        <span class="docente-count-pill">2 Docentes</span>
+      </div>
+
+      <div class="docente-table-responsive">
+        <table class="docente-table">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 32%;">Apellidos y Nombres</th>
+              <th scope="col" style="width: 48%;">Unidades Didácticas que Imparte</th>
+              <th scope="col" style="width: 20%;">Hoja de Vida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="docente-row">
+              <td class="docente-name-cell">Docente de Área de Negocios y Empleabilidad</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">OPORTUNIDAD DE NEGOCIOS (PA, IA, MA), COMPORTAMIENTO ÉTICO (PA), APLICACIONES EN INTERNET (IA), COMUNICACIÓN ORAL (ET).</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="https://drive.google.com/file/d/1V2OU1zZghuwDPnGSMOAQ08KDK8Z5Ld7c/view" target="_blank" rel="noopener noreferrer" class="btn-cv-view" title="Ver en Google Drive">
+                    <i class="fa-brands fa-google-drive"></i> Ver CV
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="docente-row">
+              <td class="docente-name-cell">CCONOVILCA AYALA, Erik Anddy</td>
+              <td>
+                <span class="docente-period-badge">PERIODO LECTIVO 2026-II</span>
+                <div class="docente-courses-text">APLICACIONES EN INTERNET (DPW, ET, PA), INGLÉS PARA LA COMUNICACIÓN ORAL (ET, PA), FUNDAMENTOS DE INNOVACIÓN TECNOLÓGICA (PA), OFIMÁTICA (MA).</div>
+              </td>
+              <td>
+                <div class="docente-cv-actions">
+                  <a href="assets/docs/plana-docente/erik-anddy-cconovilca-ayala.pdf" target="_blank" class="btn-cv-view" title="Ver PDF">
+                    <i class="fa-solid fa-file-pdf"></i> Ver CV
+                  </a>
+                  <a href="assets/docs/plana-docente/erik-anddy-cconovilca-ayala.pdf" download="CV-Erik-Anddy-Cconovilca.pdf" class="btn-cv-download" title="Descargar PDF">
+                    <i class="fa-solid fa-download"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <!-- Estado vacío cuando no hay resultados de búsqueda -->
+    <div class="docente-no-results" id="docenteNoResults">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        <line x1="8" y1="11" x2="14" y2="11"></line>
+      </svg>
+      <h3>No se encontraron resultados</h3>
+      <p>Intenta con otros términos de búsqueda o selecciona otro programa.</p>
+    </div>
+
+  </main>
+
+</div>

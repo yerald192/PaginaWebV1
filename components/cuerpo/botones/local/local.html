@@ -1,0 +1,130 @@
+<!-- ====================================================================
+     COMPONENTE: LOCAL / LOCALES
+     Ubicación: components/cuerpo/botones/local/
+     Estilos: components/cuerpo/botones/local/local.css
+     ==================================================================== -->
+<div class="local-view-wrapper" id="localSection">
+
+  <!-- ====================================================================
+       1. BANNER HERO SUPERIOR (Locales)
+       ==================================================================== -->
+  <section class="local-hero-banner" aria-label="Banner de Locales">
+    <div class="local-hero-container">
+      <h1 class="local-hero-title">Locales</h1>
+      <div class="local-hero-breadcrumb">
+        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">Home</a>
+        <span class="separator">»</span>
+        <span class="current">Local</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       2. INFORMACIÓN DEL LOCAL Y SLIDER DE FOTOS
+       ==================================================================== -->
+  <section class="local-info-section">
+    <!-- Fondo decorativo angular de circuitos tecnológicos -->
+    <div class="local-tech-bg-right" aria-hidden="true">
+      <div class="local-tech-circuits-img"></div>
+    </div>
+    <div class="local-tech-arrows-left" aria-hidden="true">&laquo;</div>
+    <div class="local-dots-pattern" aria-hidden="true"></div>
+
+    <div class="local-container">
+      <div class="local-grid">
+        
+        <!-- Columna Izquierda: Información Institucional -->
+        <div class="local-col-info">
+          <span class="local-badge-sub">instituto de Educación Superior</span>
+          
+          <div class="local-main-heading">
+            <span class="local-title-publico">Público</span>
+            <!-- Trazo decorativo morado debajo de Público -->
+            <svg class="local-heading-wave" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M2 6C20 1 35 9 55 5C70 2 82 8 88 5" stroke="#9333ea" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <span class="local-title-huanta">“Huanta”</span>
+          </div>
+
+          <p class="local-paragraph-desc">
+            Contamos con diversos locales que contribuyen al desarrollo de nuestras actividades educativas y administrativas. A continuación, presentamos la información básica de nuestros locales, incluyendo la dirección actual, ubicación en mapas e imágenes del acceso principal:
+          </p>
+
+          <div class="local-sede-box">
+            <div class="local-sede-title">Sede Principal:</div>
+            <div class="local-sede-address">• Dirección: Jr. Córdova 650</div>
+          </div>
+
+          <!-- Pastilla de Contacto Telefónico -->
+          <div class="local-contact-card">
+            <div class="local-contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="local-contact-meta">
+              <span class="local-contact-label">Contactos:</span>
+              <a href="tel:066322296" class="local-contact-phone">(066) 322296</a>
+            </div>
+          </div>
+
+          <div class="local-schedule-box">
+            <strong>Horario de Atención:</strong><br>
+            Lun – Vier: 7:30 am – 1:15 pm
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Slider de Fotos del Local -->
+        <div class="local-col-slider">
+          <div class="local-card-frame">
+            <img src="assets/images/local-entrada-principal.jpg" 
+                 alt="Acceso y frontis principal del IESTP Huanta" 
+                 class="local-slide-item active" 
+                 id="localSlide0">
+            <img src="assets/images/local-campus-2.png" 
+                 alt="Instalaciones del local del IESTP Huanta" 
+                 class="local-slide-item" 
+                 id="localSlide1">
+          </div>
+
+          <!-- Puntos indicadores del slider (como en la captura) -->
+          <div class="local-slider-dots">
+            <button class="local-dot-btn active" id="localDot0" data-index="0" aria-label="Ver imagen 1 del local">
+              <span class="local-dot-outer">
+                <span class="local-dot-inner"></span>
+              </span>
+            </button>
+            <button class="local-dot-btn" id="localDot1" data-index="1" aria-label="Ver imagen 2 del local">
+              <span class="local-dot-outer">
+                <span class="local-dot-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       3. SECCIÓN DEL MAPA DE GOOGLE MAPS
+       ==================================================================== -->
+  <section class="local-map-section">
+    <div class="local-map-container">
+      <p class="local-map-intro-text">
+        En el Instituto de Educación Superior Público Huanta, nos esforzamos por proporcionar una ubicación accesible y adecuada para el desarrollo de nuestras actividades educativas y administrativas. Si necesitas más información sobre alguno de nuestros locales, no dudes en ponerte en contacto con nosotros.
+      </p>
+
+      <div class="local-map-frame">
+        <iframe class="local-map-iframe" 
+                src="https://maps.google.com/maps?q=tecnologico%20huanta&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" 
+                title="Ubicación en Google Maps del IESTP Huanta" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</div>
