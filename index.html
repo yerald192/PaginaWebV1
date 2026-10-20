@@ -12,9 +12,14 @@
   <link rel="stylesheet" href="components/principal/header/header.css">
   <link rel="stylesheet" href="components/principal/footer/footer.css">
   
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <!-- Estilos de la sección Inicio y Botones -->
   <link rel="stylesheet" href="components/cuerpo/inicio/inicio.css">
   <link rel="stylesheet" href="components/cuerpo/botones/Organización Institucional/Organización Institucional.css">
+  <link rel="stylesheet" href="components/cuerpo/botones/presentacion/style.css">
+  <link rel="stylesheet" href="components/cuerpo/botones/Plana jerárquica/Plana jerárquica.css">
 
   <!-- Estilos Globales de la Página -->
   <link rel="stylesheet" href="css/main.css">
@@ -450,6 +455,347 @@
       </div>
 
     </div>
+    <!-- /#organizacionSection -->
+
+    <!-- ====================================================================
+         CONTENIDO DE LA PÁGINA: SECCIÓN PRESENTACIÓN
+         Ubicación del componente: components/cuerpo/botones/presentacion/
+         Estilos: components/cuerpo/botones/presentacion/style.css
+         ==================================================================== -->
+    <div class="presentacion-view-wrapper" id="presentacionSection" style="display: none;">
+
+      <!-- 1. BANNER SUPERIOR (HERO) -->
+      <div class="ct-pagetitle">
+        <div class="ct-pagetitle-overlay"></div>
+        <div class="container">
+          <div class="ct-pagetitle-inner">
+            <h1 class="page-title">Presentación</h1>
+            <div class="ct-breadcrumb">
+              <ul class="ct-breadcrumb-items">
+                <li class="breadcrumb-item">
+                  <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
+                    <i class="fa-solid fa-house" style="font-size: 13px; margin-right: 4px;"></i> Home
+                  </a>
+                </li>
+                <li class="breadcrumb-separator"><i class="fa-solid fa-angle-right"></i></li>
+                <li class="breadcrumb-item current">Presentación</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. SECCIÓN PRINCIPAL DE PRESENTACIÓN -->
+      <section class="presentation-wrapper">
+        <div class="container">
+          <div class="presentation-grid">
+            
+            <!-- COLUMNA IZQUIERDA: Reseña Histórica & Programas -->
+            <div class="col-left">
+              
+              <div class="ct-heading-sub">
+                <span class="sub-title">Reseña histórica</span>
+                <div class="divider-svg-wrap">
+                  <svg class="heading-svg-wave" viewBox="0 0 45 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 9.5H27C32.5 9.5 35 3 29 3" stroke="url(#blue-grad-pres-1)" stroke-width="2.6" stroke-linecap="round"/>
+                    <path d="M-8 15H18C23.5 15 26 8.5 20 8.5" stroke="url(#blue-grad-pres-1)" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
+                    <defs>
+                      <linearGradient id="blue-grad-pres-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#006cff"/>
+                        <stop offset="100%" stop-color="#1227b8"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+
+              <h2 class="main-title">
+                Breve Presentación de la <span class="text-highlight">Institución</span>
+              </h2>
+
+              <p class="content-paragraph text-justify">
+                El Instituto de Educación Superior Público "Huanta", fue creado por RM Nro.265-86-ED, del 05 de junio de 1986. Inicialmente, fue creado con las especialidades de Agropecuaria y Electricidad, con RM Nro.265-86; al año siguiente se creó la especialidad de Enfermería Técnica, con RD Nro.3983-87-ED. Posteriormente, las necesidades formativas de la educación técnica, así como la demanda en el mercado laboral de la zona permitieron la sustitución y ampliación de nuevos programas de estudios, tal como Computación e Informática que se creó por RD Nro.109-96-ED, y luego el programa de Industrias Alimentarias creado por el RD Nro.0257-97-ED. El 19 de abril del año 1997. Y luego el programa de Mecánica Automotriz creado por RD Nro.2001-2009 -ED. El 24 de agosto del año 2009.
+              </p>
+
+              <div class="programs-section">
+                <p class="programs-lead">En la actualidad se ofrecen 5 programas de estudios:</p>
+                <ul class="programs-bullet-list">
+                  <li>Diseño y Programación Web</li>
+                  <li>Enfermería Técnica</li>
+                  <li>Mecatrónica Automotriz</li>
+                  <li>Industrias de alimentos y bebidas</li>
+                  <li>Producción Agropecuaria</li>
+                </ul>
+              </div>
+
+              <p class="content-paragraph text-justify">
+                El Instituto de Educación Superior Público Huanta está comprometido en mejorar la calidad de la educación que ofrecemos. Como parte de este compromiso, nos encontramos actualmente inmersos en el proceso de adecuación necesario para el proceso de licenciamiento.
+              </p>
+
+            </div>
+
+            <!-- COLUMNA DERECHA: Composición Visual & Licenciamiento -->
+            <div class="col-right">
+              
+              <div class="visual-container">
+                
+                <div class="blue-decorative-ring" aria-hidden="true"></div>
+
+                <div class="campus-card-box">
+                  <img src="assets/images/instituto.jpg" alt="Entrada Principal del IESTP Huanta" class="campus-main-img">
+                  
+                  <div class="ct-banner-counter">
+                    <div class="counter-dot-grid" aria-hidden="true"></div>
+                    <div class="counter-number" id="counterNumber">39</div>
+                    <div class="counter-label">Años al servicio de la educación</div>
+                  </div>
+
+                  <div class="ct-banner-holder">
+                    <div class="holder-icon-box">
+                      <svg class="licensed-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                      </svg>
+                    </div>
+                    <div class="holder-meta">
+                      <h5 class="holder-title">INSTITUTO LICENCIADO</h5>
+                      <div class="holder-desc">Estamos consolidados como un referente en la formación de calidad.</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Botón de Video Institucional -->
+                <div class="video-button-wrapper">
+                  <button class="el-btn-video" id="playVideoBtn" type="button">
+                    <span class="video-btn-text">Video Institucional</span>
+                    <span class="video-play-circle">
+                      <i class="fa fa-play"></i>
+                    </span>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="licensing-extra-text">
+                <p class="content-paragraph text-justify">
+                  El licenciamiento es un paso fundamental que garantiza que nuestros programas académicos y servicios cumplen con los estándares y requisitos establecidos por las autoridades educativas competentes. Gracias a este proceso, hemos asegurado que nuestros estudiantes reciban una formación de calidad y que nuestras instalaciones estén a la altura de las expectativas.
+                </p>
+                <p class="content-paragraph text-justify">
+                  Contar con el licenciamiento refleja nuestro compromiso con la excelencia académica y el desarrollo de nuestra comunidad educativa. Seguimos trabajando continuamente para mantener y superar estos estándares, consolidando así una educación sólida y de calidad para todos nuestros estudiantes.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. MODAL LIGHTBOX PARA REPRODUCIR EL VIDEO -->
+      <div class="video-modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="video-modal-dialog">
+          <div class="video-modal-top">
+            <h3 class="video-modal-title"><i class="fa-solid fa-film"></i> Video Institucional - IESTP Huanta</h3>
+            <button class="video-modal-close" id="closeVideoBtn" aria-label="Cerrar video">&times;</button>
+          </div>
+          <div class="video-modal-body">
+            <video id="institutionVideo" controls playsinline preload="metadata" poster="assets/images/instituto.jpg">
+              <source src="https://iestphuanta.edu.pe/wp-content/uploads/2024/08/FBDownloader.to_An9si1NBjNlVmW4a0ukUzfTs7jNedomWGKflND3xGdd4ROdJt2df-kX8B_3FKbR3T7s5m-VECAKoFQwBAiBDmUz8_720p_HD-1.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video HTML5.
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#presentacionSection -->
+
+    <!-- ====================================================================
+         CONTENIDO DE LA PÁGINA: SECCIÓN PLANA JERÁRQUICA
+         Ubicación del componente: components/cuerpo/botones/Plana jerárquica/
+         Estilos: components/cuerpo/botones/Plana jerárquica/Plana jerárquica.css
+         ==================================================================== -->
+    <div class="plana-jerarquica-wrapper" id="planaJerarquicaSection" style="display: none;">
+
+      <!-- 1. BANNER SUPERIOR DE TÍTULO (HERO) -->
+      <section class="pagetitle" aria-label="Encabezado de Plana jerárquica">
+        <div class="container">
+          <h1>Plana jerárquica</h1>
+          <div class="crumbs">
+            <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
+              <i class="fa-solid fa-house" style="font-size: 13px; margin-right: 4px;"></i> Home
+            </a>
+            <span>/</span>
+            <span class="current">Plana jerárquica</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CONTENIDO PRINCIPAL: DIRECTORIO INSTITUCIONAL -->
+      <section class="main-content-section">
+        <div class="container">
+          
+          <p class="intro">
+            En el Instituto de Educación Superior Público Huanta, contamos con un equipo comprometido y dedicado que trabaja arduamente para garantizar una educación de calidad. A continuación, presentamos el directorio de la plana jerárquica de nuestra institución, junto con la información básica del personal:
+          </p>
+
+          <div class="grid">
+            
+            <!-- Tarjeta del Director General -->
+            <aside class="card">
+              <div class="card-img-wrap">
+                <img src="assets/images/director.png" alt="Ing. Esaú Villantoy Palomino - Director General">
+              </div>
+              <div class="body">
+                <h3>Ing. Esaú VILLANTOY PALOMINO</h3>
+                <div class="role">Director General</div>
+                <p>
+                  En el Instituto de Educación Superior Público Huanta, contamos con un equipo comprometido y dedicado que trabaja arduamente para garantizar una educación de calidad.
+                </p>
+                <ul class="contact">
+                  <li><i class="fa-solid fa-phone"></i> (066) 322296</li>
+                  <li><i class="fa-regular fa-envelope"></i> contactos@iestphuanta.edu.pe</li>
+                  <li><i class="fa-solid fa-location-dot"></i> Jr. Córdova 650</li>
+                </ul>
+              </div>
+            </aside>
+
+            <!-- Directorio del Personal Jerárquico y Coordinadores -->
+            <div class="staff">
+              
+              <div class="item">
+                <h4>Jefe de Unidad Académica</h4>
+                <ul>
+                  <li><b>Nombre:</b> Lic. Ismael LIRA HUAMAN</li>
+                  <li><b>Cargo:</b> Jefe de Unidad Académica</li>
+                  <li><b>Correo electrónico:</b> lirahuamismael@gmail.com</li>
+                  <li><b>Celular:</b> 986162715</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Secretaría Académica</h4>
+                <ul>
+                  <li><b>Nombre:</b> Tec. Kevin Vlaes BANDO GOMEZ</li>
+                  <li><b>Cargo:</b> Jefe de secretaría académica</li>
+                  <li><b>Correo electrónico:</b> Kev_vls@hotmail.com</li>
+                  <li><b>Celular:</b> 995497720</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador de Área de Calidad</h4>
+                <ul>
+                  <li><b>Nombre:</b> Ing. Gerson Uriel TAYPE MUCHA</li>
+                  <li><b>Cargo:</b> Coordinador de Área de Calidad</li>
+                  <li><b>Correo electrónico:</b> gersontaypemucha@gmail.com</li>
+                  <li><b>Celular:</b> 999171627</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador del Programa de Estudios de Diseño y Programación Web</h4>
+                <ul>
+                  <li><b>Nombre:</b> Juan Carlos TORRES LOZANO</li>
+                  <li><b>Cargo:</b> Coordinador del Área Académica de Diseño y Programación Web</li>
+                  <li><b>Correo electrónico:</b> jctorreslozano@gmail.com</li>
+                  <li><b>Celular:</b> 935627200</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador del Programa de Estudios de Industrias de Alimentos y Bebidas</h4>
+                <ul>
+                  <li><b>Nombre:</b> Ing. Ernesto ANDÍA OVALLE</li>
+                  <li><b>Cargo:</b> Coordinador del Área Académica de Industrias de Alimentos y Bebidas</li>
+                  <li><b>Correo electrónico:</b> andiaernesto@gmail.com</li>
+                  <li><b>Celular:</b> 955956533</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador del Programa de Estudios de Producción Agropecuaria</h4>
+                <ul>
+                  <li><b>Nombre:</b> Ing. René Ángel ALEJANDRO SALAZAR</li>
+                  <li><b>Cargo:</b> Coordinador del Área Académica de Producción Agropecuaria</li>
+                  <li><b>Correo electrónico:</b> isthreal@hotmail.com</li>
+                  <li><b>Celular:</b> 966127390</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Jefe de Unidad Administrativa</h4>
+                <ul>
+                  <li><b>Nombre:</b> CPC Maricela Silvia GUERRA LÓPEZ</li>
+                  <li><b>Cargo:</b> Jefe de Área Administrativa</li>
+                  <li><b>Correo electrónico:</b> maricelaguerra@iestphuanta.edu.pe</li>
+                  <li><b>Celular:</b> 980099744</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Jefe de Unidad de Bienestar y Empleabilidad</h4>
+                <ul>
+                  <li><b>Nombre:</b> Lic. Alfonso Alvaro MORENO MARQUEZ</li>
+                  <li><b>Cargo:</b> Jefe de Bienestar y Empleabilidad</li>
+                  <li><b>Correo electrónico:</b> alfonsoamoreno@hotmail.com</li>
+                  <li><b>Celular:</b> 966903518</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Jefe de Investigación e Innovación Tecnológica</h4>
+                <ul>
+                  <li><b>Nombre:</b> Ing. Abraham David CRUZ CAPCHA</li>
+                  <li><b>Cargo:</b> Jefe de Unidad de Investigación e Innovación Tecnológica</li>
+                  <li><b>Correo electrónico:</b> david.cruz@iestphuanta.edu.pe</li>
+                  <li><b>Celular:</b> 990909525</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Jefe de la Unidad de Formación Continua</h4>
+                <ul>
+                  <li><b>Nombre:</b> Ing. Nancy Beatriz RODRIGUEZ LAOS</li>
+                  <li><b>Cargo:</b> Jefe de la Unidad de Formación Continua</li>
+                  <li><b>Correo electrónico:</b> nayito.rodriguez@gmail.com</li>
+                  <li><b>Celular:</b> 955956599</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador del Programa de Estudios de Enfermería Técnica</h4>
+                <ul>
+                  <li><b>Nombre:</b> Lic. Jimmy ARANDA ESCALANTE</li>
+                  <li><b>Cargo:</b> Coordinador del Área de Enfermería Técnica</li>
+                  <li><b>Correo electrónico:</b> 28295518@iestphuanta.edu.pe</li>
+                  <li><b>Celular:</b> 979106040</li>
+                </ul>
+              </div>
+
+              <div class="item">
+                <h4>Coordinador del Programa de Estudios de Mecatrónica Automotriz</h4>
+                <ul>
+                  <li><b>Nombre:</b> Lic. Renán LUDEÑA ARANDA</li>
+                  <li><b>Cargo:</b> Coordinador del Área Académica de Mecatrónica Automotriz</li>
+                  <li><b>Correo electrónico:</b> contactos@iestphuanta.edu.pe</li>
+                  <li><b>Celular:</b> (066) 322296</li>
+                </ul>
+              </div>
+
+              <p class="closing">
+                En el Instituto de Educación Superior Público Huanta, valoramos el trabajo en equipo y la colaboración para lograr nuestros objetivos institucionales. Si necesitas ponerte en contacto con algún miembro de nuestro equipo, no dudes en utilizar la información proporcionada anteriormente.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <!-- ====================================================================
@@ -551,6 +897,8 @@
   <script src="components/principal/footer/footer.js"></script>
   <script src="components/cuerpo/inicio/inicio.js"></script>
   <script src="components/cuerpo/botones/Organización Institucional/Organización Institucional.js"></script>
+  <script src="components/cuerpo/botones/presentacion/script.js"></script>
+  <script src="components/cuerpo/botones/Plana jerárquica/Plana jerárquica.js"></script>
   <script src="js/navigation.js"></script>
 
 </body>

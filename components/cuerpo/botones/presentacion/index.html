@@ -1,0 +1,168 @@
+<!-- =========================================================================
+     COMPONENTE: PRESENTACIÓN INSTITUCIONAL
+     Ubicación: components/cuerpo/botones/presentacion/
+     Estilos: components/cuerpo/botones/presentacion/style.css
+     ========================================================================= -->
+<div class="presentacion-view-wrapper" id="presentacionSection">
+
+  <!-- =========================================================================
+       1. BANNER SUPERIOR (HERO)
+       ========================================================================= -->
+  <div class="ct-pagetitle">
+    <div class="ct-pagetitle-overlay"></div>
+    <div class="container">
+      <div class="ct-pagetitle-inner">
+        <h1 class="page-title">Presentación</h1>
+        <div class="ct-breadcrumb">
+          <ul class="ct-breadcrumb-items">
+            <li class="breadcrumb-item">
+              <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
+                <i class="fa-solid fa-house" style="font-size: 13px; margin-right: 4px;"></i> Home
+              </a>
+            </li>
+            <li class="breadcrumb-separator"><i class="fa-solid fa-angle-right"></i></li>
+            <li class="breadcrumb-item current">Presentación</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. SECCIÓN PRINCIPAL DE PRESENTACIÓN
+       ========================================================================= -->
+  <section class="presentation-wrapper">
+    <div class="container">
+      <div class="presentation-grid">
+        
+        <!-- COLUMNA IZQUIERDA: Reseña Histórica & Programas -->
+        <div class="col-left">
+          
+          <!-- Subtítulo / Categoría con trazo decorativo ondulado oficial -->
+          <div class="ct-heading-sub">
+            <span class="sub-title">Reseña histórica</span>
+            <div class="divider-svg-wrap">
+              <svg class="heading-svg-wave" viewBox="0 0 45 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9.5H27C32.5 9.5 35 3 29 3" stroke="url(#blue-grad-1)" stroke-width="2.6" stroke-linecap="round"/>
+                <path d="M-8 15H18C23.5 15 26 8.5 20 8.5" stroke="url(#blue-grad-1)" stroke-width="2.6" stroke-linecap="round" opacity="0.6"/>
+                <defs>
+                  <linearGradient id="blue-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#006cff"/>
+                    <stop offset="100%" stop-color="#1227b8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Título Principal -->
+          <h2 class="main-title">
+            Breve Presentación de la <span class="text-highlight">Institución</span>
+          </h2>
+
+          <!-- Párrafo Histórico 1 -->
+          <p class="content-paragraph text-justify">
+            El Instituto de Educación Superior Público "Huanta", fue creado por RM Nro.265-86-ED, del 05 de junio de 1986. Inicialmente, fue creado con las especialidades de Agropecuaria y Electricidad, con RM Nro.265-86; al año siguiente se creó la especialidad de Enfermería Técnica, con RD Nro.3983-87-ED. Posteriormente, las necesidades formativas de la educación técnica, así como la demanda en el mercado laboral de la zona permitieron la sustitución y ampliación de nuevos programas de estudios, tal como Computación e Informática que se creó por RD Nro.109-96-ED, y luego el programa de Industrias Alimentarias creado por el RD Nro.0257-97-ED. El 19 de abril del año 1997. Y luego el programa de Mecánica Automotriz creado por RD Nro.2001-2009 -ED. El 24 de agosto del año 2009.
+          </p>
+
+          <!-- Listado de los 5 programas de estudios -->
+          <div class="programs-section">
+            <p class="programs-lead">En la actualidad se ofrecen 5 programas de estudios:</p>
+            <ul class="programs-bullet-list">
+              <li>Diseño y Programación Web</li>
+              <li>Enfermería Técnica</li>
+              <li>Mecatrónica Automotriz</li>
+              <li>Industrias de alimentos y bebidas</li>
+              <li>Producción Agropecuaria</li>
+            </ul>
+          </div>
+
+          <!-- Párrafo de compromiso -->
+          <p class="content-paragraph text-justify">
+            El Instituto de Educación Superior Público Huanta está comprometido en mejorar la calidad de la educación que ofrecemos. Como parte de este compromiso, nos encontramos actualmente inmersos en el proceso de adecuación necesario para el proceso de licenciamiento.
+          </p>
+
+        </div>
+
+        <!-- COLUMNA DERECHA: Composición Visual & Licenciamiento -->
+        <div class="col-right">
+          
+          <div class="visual-container">
+            
+            <!-- Aro azul circular decorativo de fondo -->
+            <div class="blue-decorative-ring" aria-hidden="true"></div>
+
+            <!-- Contenedor de la foto del Instituto -->
+            <div class="campus-card-box">
+              <img src="assets/images/instituto.jpg" alt="Entrada Principal del IESTP Huanta" class="campus-main-img">
+              
+              <!-- Placa flotante: 39 Años al servicio de la educación -->
+              <div class="ct-banner-counter">
+                <div class="counter-dot-grid" aria-hidden="true"></div>
+                <div class="counter-number" id="counterNumber">39</div>
+                <div class="counter-label">Años al servicio de la educación</div>
+              </div>
+
+              <!-- Tarjeta flotante inferior: INSTITUTO LICENCIADO -->
+              <div class="ct-banner-holder">
+                <div class="holder-icon-box">
+                  <svg class="licensed-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <div class="holder-meta">
+                  <h5 class="holder-title">INSTITUTO LICENCIADO</h5>
+                  <div class="holder-desc">Estamos consolidados como un referente en la formación de calidad.</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botón de Video Institucional -->
+            <div class="video-button-wrapper">
+              <button class="el-btn-video" id="playVideoBtn" type="button">
+                <span class="video-btn-text">Video Institucional</span>
+                <span class="video-play-circle">
+                  <i class="fa fa-play"></i>
+                </span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Párrafos explicativos sobre Licenciamiento -->
+          <div class="licensing-extra-text">
+            <p class="content-paragraph text-justify">
+              El licenciamiento es un paso fundamental que garantiza que nuestros programas académicos y servicios cumplen con los estándares y requisitos establecidos por las autoridades educativas competentes. Gracias a este proceso, hemos asegurado que nuestros estudiantes reciban una formación de calidad y que nuestras instalaciones estén a la altura de las expectativas.
+            </p>
+            <p class="content-paragraph text-justify">
+              Contar con el licenciamiento refleja nuestro compromiso con la excelencia académica y el desarrollo de nuestra comunidad educativa. Seguimos trabajando continuamente para mantener y superar estos estándares, consolidando así una educación sólida y de calidad para todos nuestros estudiantes.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. MODAL LIGHTBOX PARA REPRODUCIR EL VIDEO
+       ========================================================================= -->
+  <div class="video-modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="video-modal-dialog">
+      <div class="video-modal-top">
+        <h3 class="video-modal-title"><i class="fa-solid fa-film"></i> Video Institucional - IESTP Huanta</h3>
+        <button class="video-modal-close" id="closeVideoBtn" aria-label="Cerrar video">&times;</button>
+      </div>
+      <div class="video-modal-body">
+        <video id="institutionVideo" controls playsinline preload="metadata" poster="assets/images/instituto.jpg">
+          <source src="https://iestphuanta.edu.pe/wp-content/uploads/2024/08/FBDownloader.to_An9si1NBjNlVmW4a0ukUzfTs7jNedomWGKflND3xGdd4ROdJt2df-kX8B_3FKbR3T7s5m-VECAKoFQwBAiBDmUz8_720p_HD-1.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+      </div>
+    </div>
+  </div>
+
+</div>

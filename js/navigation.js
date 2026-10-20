@@ -1,26 +1,35 @@
 /**
  * Navigation Router - IESTP Huanta
- * Controla la transición y alternancia dinámica entre Inicio y Organización Institucional.
+ * Controla la transición dinámica entre Inicio, Presentación, Organización Institucional, Plana Jerárquica y demás vistas.
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const inicioSection = document.getElementById('inicioSection');
-  const organizacionSection = document.getElementById('organizacionSection');
+  const views = {
+    'inicio': document.getElementById('inicioSection'),
+    'presentacion': document.getElementById('presentacionSection'),
+    'organizacion-institucional': document.getElementById('organizacionSection'),
+    'plana-jerarquica': document.getElementById('planaJerarquicaSection')
+  };
+
   const menuNav = document.getElementById('headerMenuNav');
   const mobileToggle = document.getElementById('headerMobileToggle');
 
-  function showView(viewName) {
-    if (viewName === 'organizacion-institucional') {
-      if (inicioSection) inicioSection.style.display = 'none';
-      if (organizacionSection) {
-        organizacionSection.style.display = 'block';
+  function showView(viewKey) {
+    const activeKey = views[viewKey] ? viewKey : 'inicio';
+
+    Object.keys(views).forEach(key => {
+      const el = views[key];
+      if (el) {
+        if (key === activeKey) {
+          el.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
       }
-    } else {
-      if (organizacionSection) {
-        organizacionSection.style.display = 'none';
-      }
-      if (inicioSection) {
-        inicioSection.style.display = 'block';
-      }
+    });
+
+    // Si la vista es presentación, ejecutar la animación del contador y configurar video
+    if (activeKey === 'presentacion' && typeof window.initPresentacionView === 'function') {
+      window.initPresentacionView();
     }
 
     // Cerrar menú móvil si está desplegado
@@ -34,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleHash() {
-    const hash = window.location.hash.replace('#', '');
-    if (hash === 'organizacion-institucional') {
-      showView('organizacion-institucional');
-    } else if (hash === 'inicio' || hash === '') {
+    const hash = window.location.hash.replace('#', '').trim();
+    if (views[hash]) {
+      showView(hash);
+    } else {
       showView('inicio');
     }
   }
@@ -47,25 +56,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const link = e.target.closest('a');
     if (!link) return;
     const href = link.getAttribute('href');
+    if (!href) return;
 
-    if (href === '#organizacion-institucional') {
-      e.preventDefault();
-      history.pushState(null, '', '#organizacion-institucional');
-      showView('organizacion-institucional');
-    } else if (
-      href === '#inicio' || 
-      link.classList.contains('breadcrumb-home-link') ||
-      (link.classList.contains('header-brand-logo-link') && (href === '#' || href === '#inicio'))
-    ) {
-      e.preventDefault();
-      history.pushState(null, '', '#inicio');
-      showView('inicio');
+    if (href.startsWith('#')) {
+      const targetHash = href.replace('#', '').trim();
+
+      if (views[targetHash]) {
+        e.preventDefault();
+        history.pushState(null, '', '#' + targetHash);
+        showView(targetHash);
+        return;
+      }
+
+      if (
+        targetHash === 'inicio' || 
+        link.classList.contains('breadcrumb-home-link') ||
+        (link.classList.contains('header-brand-logo-link') && (href === '#' || href === '#inicio'))
+      ) {
+        e.preventDefault();
+        history.pushState(null, '', '#inicio');
+        showView('inicio');
+        return;
+      }
     }
   });
 
   window.addEventListener('hashchange', handleHash);
   window.addEventListener('popstate', handleHash);
 
-  // Inicializar al cargar la página
+  // Inicializar vista al cargar la página
   handleHash();
 });
