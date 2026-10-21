@@ -1,20 +1,20 @@
 <!-- ====================================================================
-     COMPONENTE: LOCAL / LOCALES
+     COMPONENTE: LOCAL / LOCALES (Tailwind CSS v3)
      Ubicación: components/cuerpo/botones/local/
      Estilos: components/cuerpo/botones/local/local.css
      ==================================================================== -->
-<div class="local-view-wrapper" id="localSection">
+<div class="local-view-wrapper w-full relative font-sans text-slate-800 bg-slate-50 animate-fade-in" id="localSection">
 
   <!-- ====================================================================
        1. BANNER HERO SUPERIOR (Locales)
        ==================================================================== -->
-  <section class="local-hero-banner" aria-label="Banner de Locales">
-    <div class="local-hero-container">
-      <h1 class="local-hero-title">Locales</h1>
-      <div class="local-hero-breadcrumb">
-        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">Home</a>
-        <span class="separator">»</span>
-        <span class="current">Local</span>
+  <section class="local-hero-banner relative text-white py-20 px-5 text-center shadow-inner overflow-hidden" aria-label="Banner de Locales">
+    <div class="local-hero-container max-w-[1200px] mx-auto relative z-10">
+      <h1 class="local-hero-title text-3xl sm:text-4xl lg:text-[38px] font-extrabold tracking-tight mb-3 text-shadow-hero">Locales</h1>
+      <div class="local-hero-breadcrumb flex justify-center items-center gap-2.5 text-sm sm:text-[14.5px] font-medium text-blue-200">
+        <a href="#inicio" class="breadcrumb-home-link inline-flex items-center gap-1.5 text-blue-200 hover:text-white hover:underline transition-all" title="Volver al Inicio">Home</a>
+        <span class="separator text-slate-400 opacity-80 text-[13px]">»</span>
+        <span class="current text-slate-200">Local</span>
       </div>
     </div>
   </section>
@@ -22,81 +22,80 @@
   <!-- ====================================================================
        2. INFORMACIÓN DEL LOCAL Y SLIDER DE FOTOS
        ==================================================================== -->
-  <section class="local-info-section">
+  <section class="local-info-section py-14 px-5 sm:px-8 relative overflow-hidden">
     <!-- Fondo decorativo angular de circuitos tecnológicos -->
-    <div class="local-tech-bg-right" aria-hidden="true">
+    <div class="local-tech-bg-right pointer-events-none" aria-hidden="true">
       <div class="local-tech-circuits-img"></div>
     </div>
-    <div class="local-tech-arrows-left" aria-hidden="true">&laquo;</div>
-    <div class="local-dots-pattern" aria-hidden="true"></div>
+    <div class="local-tech-arrows-left pointer-events-none" aria-hidden="true">&laquo;</div>
+    <div class="local-dots-pattern pointer-events-none" aria-hidden="true"></div>
 
-    <div class="local-container">
-      <div class="local-grid">
+    <div class="local-container max-w-[1200px] mx-auto relative z-10">
+      <div class="local-grid grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         
         <!-- Columna Izquierda: Información Institucional -->
-        <div class="local-col-info">
-          <span class="local-badge-sub">instituto de Educación Superior</span>
+        <div class="local-col-info flex flex-col gap-5 items-start">
+          <span class="local-badge-sub inline-block bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">instituto de Educación Superior</span>
           
-          <div class="local-main-heading">
-            <span class="local-title-publico">Público</span>
-            <!-- Trazo decorativo morado debajo de Público -->
-            <svg class="local-heading-wave" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <div class="local-main-heading flex items-center gap-3 flex-wrap">
+            <span class="local-title-publico text-3xl sm:text-4xl font-extrabold text-slate-900">Público</span>
+            <svg class="local-heading-wave w-24 h-3" viewBox="0 0 90 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M2 6C20 1 35 9 55 5C70 2 82 8 88 5" stroke="#9333ea" stroke-width="3" stroke-linecap="round"/>
             </svg>
-            <span class="local-title-huanta">“Huanta”</span>
+            <span class="local-title-huanta text-3xl sm:text-4xl font-extrabold text-brand-600">“Huanta”</span>
           </div>
 
-          <p class="local-paragraph-desc">
+          <p class="local-paragraph-desc text-slate-600 text-base leading-relaxed text-justify">
             Contamos con diversos locales que contribuyen al desarrollo de nuestras actividades educativas y administrativas. A continuación, presentamos la información básica de nuestros locales, incluyendo la dirección actual, ubicación en mapas e imágenes del acceso principal:
           </p>
 
-          <div class="local-sede-box">
-            <div class="local-sede-title">Sede Principal:</div>
-            <div class="local-sede-address">• Dirección: Jr. Córdova 650</div>
+          <div class="local-sede-box w-full bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+            <div class="local-sede-title font-bold text-slate-900 text-base mb-1">Sede Principal:</div>
+            <div class="local-sede-address text-slate-600 text-sm">• Dirección: Jr. Córdova 650</div>
           </div>
 
           <!-- Pastilla de Contacto Telefónico -->
-          <div class="local-contact-card">
-            <div class="local-contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <div class="local-contact-card flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm w-full">
+            <div class="local-contact-icon w-11 h-11 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
               </svg>
             </div>
-            <div class="local-contact-meta">
-              <span class="local-contact-label">Contactos:</span>
-              <a href="tel:066322296" class="local-contact-phone">(066) 322296</a>
+            <div class="local-contact-meta flex flex-col">
+              <span class="local-contact-label text-xs text-slate-400 font-medium">Contactos:</span>
+              <a href="tel:066322296" class="local-contact-phone text-base font-bold text-slate-800 hover:text-blue-600 transition-colors">(066) 322296</a>
             </div>
           </div>
 
-          <div class="local-schedule-box">
-            <strong>Horario de Atención:</strong><br>
+          <div class="local-schedule-box w-full bg-indigo-50/70 p-4 rounded-xl border border-indigo-100 text-sm text-slate-700">
+            <strong class="text-indigo-950 font-bold">Horario de Atención:</strong><br>
             Lun – Vier: 7:30 am – 1:15 pm
           </div>
         </div>
 
         <!-- Columna Derecha: Slider de Fotos del Local -->
-        <div class="local-col-slider">
-          <div class="local-card-frame">
+        <div class="local-col-slider flex flex-col items-center">
+          <div class="local-card-frame w-full h-[360px] sm:h-[420px] relative rounded-2xl overflow-hidden shadow-card border border-slate-200 bg-slate-900">
             <img src="assets/images/local-entrada-principal.jpg" 
                  alt="Acceso y frontis principal del IESTP Huanta" 
-                 class="local-slide-item active" 
+                 class="local-slide-item active w-full h-full object-cover" 
                  id="localSlide0">
             <img src="assets/images/local-campus-2.png" 
                  alt="Instalaciones del local del IESTP Huanta" 
-                 class="local-slide-item" 
+                 class="local-slide-item w-full h-full object-cover" 
                  id="localSlide1">
           </div>
 
-          <!-- Puntos indicadores del slider (como en la captura) -->
-          <div class="local-slider-dots">
-            <button class="local-dot-btn active" id="localDot0" data-index="0" aria-label="Ver imagen 1 del local">
-              <span class="local-dot-outer">
-                <span class="local-dot-inner"></span>
+          <!-- Puntos indicadores del slider -->
+          <div class="local-slider-dots flex items-center justify-center gap-3 mt-4">
+            <button class="local-dot-btn active p-1 rounded-full transition-transform hover:scale-125" id="localDot0" data-index="0" aria-label="Ver imagen 1 del local">
+              <span class="local-dot-outer w-4 h-4 rounded-full border-2 border-brand-600 flex items-center justify-center">
+                <span class="local-dot-inner w-2 h-2 rounded-full bg-brand-600"></span>
               </span>
             </button>
-            <button class="local-dot-btn" id="localDot1" data-index="1" aria-label="Ver imagen 2 del local">
-              <span class="local-dot-outer">
-                <span class="local-dot-inner"></span>
+            <button class="local-dot-btn p-1 rounded-full transition-transform hover:scale-125" id="localDot1" data-index="1" aria-label="Ver imagen 2 del local">
+              <span class="local-dot-outer w-4 h-4 rounded-full border-2 border-slate-300 flex items-center justify-center">
+                <span class="local-dot-inner w-2 h-2 rounded-full bg-transparent"></span>
               </span>
             </button>
           </div>
@@ -109,14 +108,14 @@
   <!-- ====================================================================
        3. SECCIÓN DEL MAPA DE GOOGLE MAPS
        ==================================================================== -->
-  <section class="local-map-section">
-    <div class="local-map-container">
-      <p class="local-map-intro-text">
+  <section class="local-map-section py-12 px-5 sm:px-8 bg-white border-t border-slate-100">
+    <div class="local-map-container max-w-[1200px] mx-auto">
+      <p class="local-map-intro-text text-slate-600 text-sm sm:text-base leading-relaxed text-justify mb-8">
         En el Instituto de Educación Superior Público Huanta, nos esforzamos por proporcionar una ubicación accesible y adecuada para el desarrollo de nuestras actividades educativas y administrativas. Si necesitas más información sobre alguno de nuestros locales, no dudes en ponerte en contacto con nosotros.
       </p>
 
-      <div class="local-map-frame">
-        <iframe class="local-map-iframe" 
+      <div class="local-map-frame w-full h-[400px] sm:h-[480px] rounded-2xl overflow-hidden shadow-card border border-slate-200">
+        <iframe class="local-map-iframe w-full h-full border-0" 
                 src="https://maps.google.com/maps?q=tecnologico%20huanta&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" 
                 title="Ubicación en Google Maps del IESTP Huanta" 
                 loading="lazy" 

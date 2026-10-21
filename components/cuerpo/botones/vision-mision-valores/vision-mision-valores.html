@@ -1,21 +1,21 @@
 <!-- ====================================================================
-     COMPONENTE: VISIÓN, MISIÓN Y VALORES
+     COMPONENTE: VISIÓN, MISIÓN Y VALORES (Tailwind CSS v3)
      Ubicación: components/cuerpo/botones/vision-mision-valores/
      Estilos: components/cuerpo/botones/vision-mision-valores/vision-mision-valores.css
      ==================================================================== -->
-<div class="vision-mision-wrapper" id="visionMisionSection">
+<div class="vision-mision-wrapper w-full relative font-sans text-slate-800 bg-slate-50 animate-fade-in" id="visionMisionSection">
 
   <!-- ====================================================================
        1. BANNER HERO SUPERIOR (Graduación y título centrado)
        ==================================================================== -->
-  <section class="vm-hero-banner" aria-label="Banner de Visión, Misión y Valores">
+  <section class="vm-hero-banner relative text-white py-20 px-5 text-center shadow-inner overflow-hidden" aria-label="Banner de Visión, Misión y Valores">
     <div class="vm-deco-circle" aria-hidden="true"></div>
-    <div class="vm-hero-container">
-      <h1 class="vm-hero-title">Visión, Misión y Valores</h1>
-      <div class="vm-hero-breadcrumb">
-        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">Home</a>
-        <span class="separator">»</span>
-        <span class="current">Visión, Misión y Valores</span>
+    <div class="vm-hero-container max-w-[1200px] mx-auto relative z-10">
+      <h1 class="vm-hero-title text-3xl sm:text-4xl lg:text-[38px] font-extrabold tracking-tight mb-3 text-shadow-hero">Visión, Misión y Valores</h1>
+      <div class="vm-hero-breadcrumb flex justify-center items-center gap-2.5 text-sm sm:text-[14.5px] font-medium text-blue-200">
+        <a href="#inicio" class="breadcrumb-home-link inline-flex items-center gap-1.5 text-blue-200 hover:text-white hover:underline transition-all" title="Volver al Inicio">Home</a>
+        <span class="separator text-slate-400 opacity-80 text-[13px]">»</span>
+        <span class="current text-slate-200">Visión, Misión y Valores</span>
       </div>
     </div>
   </section>
@@ -23,21 +23,21 @@
   <!-- ====================================================================
        2. NAVEGACIÓN POR PESTAÑAS (TABS CENTRADOS)
        ==================================================================== -->
-  <section class="vm-tabs-section">
-    <div class="vm-tabs-nav-container">
-      <ul class="vm-tabs-nav" role="tablist">
+  <section class="vm-tabs-section py-8 px-5">
+    <div class="vm-tabs-nav-container max-w-[1200px] mx-auto">
+      <ul class="vm-tabs-nav flex flex-wrap justify-center gap-3 list-none p-0 m-0" role="tablist">
         <li role="presentation">
-          <button class="vm-tab-btn active" id="tabBtnMision" data-target="paneMision" role="tab" aria-selected="true" aria-controls="paneMision">
+          <button class="vm-tab-btn active inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-sm" id="tabBtnMision" data-target="paneMision" role="tab" aria-selected="true" aria-controls="paneMision">
             Nuestra Misión
           </button>
         </li>
         <li role="presentation">
-          <button class="vm-tab-btn" id="tabBtnVision" data-target="paneVision" role="tab" aria-selected="false" aria-controls="paneVision">
+          <button class="vm-tab-btn inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-sm" id="tabBtnVision" data-target="paneVision" role="tab" aria-selected="false" aria-controls="paneVision">
             Nuestra Visión
           </button>
         </li>
         <li role="presentation">
-          <button class="vm-tab-btn" id="tabBtnValores" data-target="paneValores" role="tab" aria-selected="false" aria-controls="paneValores">
+          <button class="vm-tab-btn inline-flex items-center gap-2 font-semibold px-6 py-3 rounded-full transition-all duration-200 shadow-sm" id="tabBtnValores" data-target="paneValores" role="tab" aria-selected="false" aria-controls="paneValores">
             Valores Institucionales
           </button>
         </li>
@@ -48,34 +48,33 @@
   <!-- ====================================================================
        3. CONTENIDO DE LAS PESTAÑAS
        ==================================================================== -->
-  <section class="vm-content-area">
-    <div class="vm-container">
+  <section class="vm-content-area py-10 px-5 sm:px-8">
+    <div class="vm-container max-w-[1200px] mx-auto">
 
       <!-- PANE 1: NUESTRA MISIÓN (Visible por defecto, como en la imagen) -->
       <div class="vm-tab-pane active" id="paneMision" role="tabpanel" aria-labelledby="tabBtnMision">
-        <div class="vm-grid">
+        <div class="vm-grid grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
           <!-- Lado Izquierdo: Composición Gráfica -->
-          <div class="vm-visual-wrap">
+          <div class="vm-visual-wrap relative">
             <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
             <div class="vm-dots-pattern" aria-hidden="true"></div>
             <div class="vm-photo-backdrop" aria-hidden="true"></div>
-            <div class="vm-photo-card">
-              <img src="assets/images/mision.jpg" alt="Estudiantes en ceremonia de graduación juramentando" class="vm-photo-img">
+            <div class="vm-photo-card bg-white p-2.5 rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+              <img src="assets/images/mision.jpg" alt="Estudiantes en ceremonia de graduación juramentando" class="vm-photo-img w-full h-auto rounded-xl block">
             </div>
           </div>
 
           <!-- Lado Derecho: Contenido de Misión -->
-          <div class="vm-text-wrap">
-            <span class="vm-section-badge">Misión</span>
-            <p class="vm-paragraph">
+          <div class="vm-text-wrap flex flex-col items-start gap-5">
+            <span class="vm-section-badge inline-block bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Misión</span>
+            <p class="vm-paragraph text-slate-700 text-base leading-relaxed text-justify">
               Al 2031, somos un IES de excelencia, licenciada, que lidera en la formación integral de profesionales competitivos, innovadores, fomentamos el emprendimiento, la calidad en nuestros productos y servicios, reconocidos a nivel regional y nacional por la formación de profesionales comprometidos con la calidad y cuidado del medio ambiente.
             </p>
-            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
+            <a href="#presentacion" class="vm-action-btn inline-flex items-center gap-2 font-bold text-white bg-brand-600 hover:bg-brand-700 px-6 py-3 rounded-full transition-all shadow-md" title="Conoce más sobre nuestra institución">
               <span>Sobre Nosotros</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </a>
           </div>
@@ -84,30 +83,27 @@
       </div>
 
       <!-- PANE 2: NUESTRA VISIÓN -->
-      <div class="vm-tab-pane" id="paneVision" role="tabpanel" aria-labelledby="tabBtnVision">
-        <div class="vm-grid">
+      <div class="vm-tab-pane" id="paneVision" role="tabpanel" aria-labelledby="tabBtnVision" style="display: none;">
+        <div class="vm-grid grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           
-          <!-- Lado Izquierdo: Composición Gráfica -->
-          <div class="vm-visual-wrap">
+          <div class="vm-visual-wrap relative">
             <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
             <div class="vm-dots-pattern" aria-hidden="true"></div>
             <div class="vm-photo-backdrop" aria-hidden="true"></div>
-            <div class="vm-photo-card">
-              <img src="assets/images/vision.png" alt="Visión del IESTP Huanta" class="vm-photo-img">
+            <div class="vm-photo-card bg-white p-2.5 rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+              <img src="assets/images/vision.jpg" alt="Instalaciones del Instituto de Educación Superior Huanta" class="vm-photo-img w-full h-auto rounded-xl block" onerror="this.onerror=null; this.src='assets/images/instituto.jpg';">
             </div>
           </div>
 
-          <!-- Lado Derecho: Contenido de Visión -->
-          <div class="vm-text-wrap">
-            <span class="vm-section-badge">Visión</span>
-            <p class="vm-paragraph">
-              Al 2030, somos un IES que lidera en la formación integral de profesionales competitivos, innovadores, fomentamos el emprendimiento, la calidad en nuestros productos y servicios, con sentido de cuidado del medio ambiente y que aportan al desarrollo económico de la región.
+          <div class="vm-text-wrap flex flex-col items-start gap-5">
+            <span class="vm-section-badge inline-block bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full">Visión</span>
+            <p class="vm-paragraph text-slate-700 text-base leading-relaxed text-justify">
+              Brindar formación profesional técnica de calidad, inclusiva y pertinente a las demandas laborales y productivas, promoviendo el emprendimiento, la investigación aplicada y la práctica de valores que contribuyan al desarrollo socioeconómico sostenible de la provincia de Huanta y la región de Ayacucho.
             </p>
-            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
+            <a href="#presentacion" class="vm-action-btn inline-flex items-center gap-2 font-bold text-white bg-brand-600 hover:bg-brand-700 px-6 py-3 rounded-full transition-all shadow-md" title="Conoce más sobre nuestra institución">
               <span>Sobre Nosotros</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </a>
           </div>
@@ -116,63 +112,75 @@
       </div>
 
       <!-- PANE 3: VALORES INSTITUCIONALES -->
-      <div class="vm-tab-pane" id="paneValores" role="tabpanel" aria-labelledby="tabBtnValores">
-        <div class="vm-grid">
-          
-          <!-- Lado Izquierdo: Composición Gráfica -->
-          <div class="vm-visual-wrap">
-            <img src="assets/images/h2-shape2.png" alt="" class="vm-wave-shape" aria-hidden="true">
-            <div class="vm-dots-pattern" aria-hidden="true"></div>
-            <div class="vm-photo-backdrop" aria-hidden="true"></div>
-            <div class="vm-photo-card">
-              <img src="assets/images/valores.jpg" alt="Valores Institucionales IESTP Huanta" class="vm-photo-img">
-            </div>
-          </div>
+      <div class="vm-tab-pane" id="paneValores" role="tabpanel" aria-labelledby="tabBtnValores" style="display: none;">
+        <div class="vm-valores-header text-center max-w-2xl mx-auto mb-12">
+          <span class="vm-section-badge inline-block bg-indigo-100 text-indigo-700 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-3">Identidad</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">Principios y Valores que nos Guían</h2>
+          <p class="text-slate-500 text-sm sm:text-base leading-relaxed">
+            Formamos profesionales íntegros guiados por la ética, la excelencia y el compromiso social con nuestra comunidad y el país.
+          </p>
+        </div>
 
-          <!-- Lado Derecho: Lista de Valores -->
-          <div class="vm-text-wrap">
-            <span class="vm-section-badge">Valores Institucionales</span>
-            
-            <div class="vm-values-grid">
-              <div class="vm-value-item">
-                <div class="vm-value-icon">
-                  <i class="fa-solid fa-lightbulb"></i>
-                </div>
-                <span class="vm-value-title">Innovación</span>
-              </div>
-              <div class="vm-value-item">
-                <div class="vm-value-icon">
-                  <i class="fa-solid fa-award"></i>
-                </div>
-                <span class="vm-value-title">Excelencia</span>
-              </div>
-              <div class="vm-value-item">
-                <div class="vm-value-icon">
-                  <i class="fa-solid fa-handshake"></i>
-                </div>
-                <span class="vm-value-title">Compromiso</span>
-              </div>
-              <div class="vm-value-item">
-                <div class="vm-value-icon">
-                  <i class="fa-solid fa-clock"></i>
-                </div>
-                <span class="vm-value-title">Puntualidad</span>
-              </div>
+        <div class="vm-valores-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-award"></i>
             </div>
-
-            <p class="vm-paragraph" style="margin-bottom: 25px;">
-              Nuestros valores orientan la labor académica y formativa de docentes y estudiantes, promoviendo una convivencia basada en el respeto, la ética y el servicio a la comunidad.
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Excelencia Académica</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Búsqueda constante de la mejora continua y altos estándares de calidad en todos los procesos formativos y de gestión.
             </p>
-
-            <a href="#presentacion" class="vm-action-btn" title="Conoce más sobre nuestra institución">
-              <span>Sobre Nosotros</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
           </div>
 
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Integridad y Ética</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Actuamos con honestidad, transparencia, responsabilidad y justicia en todos los ámbitos de nuestra vida institucional.
+            </p>
+          </div>
+
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Innovación y Creatividad</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Fomentamos la investigación aplicada y la generación de soluciones tecnológicas creativas para el entorno productivo.
+            </p>
+          </div>
+
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Responsabilidad Social</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Compromiso activo con el bienestar colectivo, la inclusión, la diversidad y el desarrollo de Huanta.
+            </p>
+          </div>
+
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Cuidado del Medio Ambiente</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Promoción de prácticas ecológicas sostenibles y preservación de los recursos naturales en nuestra labor técnica.
+            </p>
+          </div>
+
+          <div class="vm-valor-card bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+            <div class="vm-valor-icon w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Trabajo en Equipo</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Colaboración solidaria y articulada entre docentes, estudiantes y personal administrativo para el éxito institucional.
+            </p>
+          </div>
         </div>
       </div>
 

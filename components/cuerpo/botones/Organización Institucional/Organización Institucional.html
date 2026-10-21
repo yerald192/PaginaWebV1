@@ -1,50 +1,50 @@
 <!-- ====================================================================
-     COMPONENTE: ORGANIZACIÓN INSTITUCIONAL
+     COMPONENTE: ORGANIZACIÓN INSTITUCIONAL (Tailwind CSS v3)
      Ruta: components/cuerpo/botones/Organización Institucional/
      ==================================================================== -->
-<div class="organizacion-institucional-wrapper" id="organizacionSection">
+<div class="organizacion-institucional-wrapper w-full relative font-sans text-slate-800 bg-slate-50 animate-fade-in" id="organizacionSection">
 
   <!-- 1. BANNER DE TÍTULO SUPERIOR (Con imagen de fondo institucional) -->
-  <section class="page-title" aria-label="Encabezado de Organización Institucional">
-    <div class="container">
-      <h1>Organización Institucional</h1>
-      <ul class="breadcrumb-list" aria-label="Miga de pan">
+  <section class="page-title relative text-white py-20 px-5 text-center shadow-inner" aria-label="Encabezado de Organización Institucional">
+    <div class="container max-w-[1200px] mx-auto relative z-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-[38px] font-extrabold tracking-tight mb-3 text-shadow-hero">Organización Institucional</h1>
+      <ul class="breadcrumb-list flex justify-center items-center gap-2.5 text-sm sm:text-[14.5px] font-medium list-none p-0 m-0 text-blue-200" aria-label="Miga de pan">
         <li>
-          <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <a href="#inicio" class="breadcrumb-home-link inline-flex items-center gap-1.5 text-blue-200 hover:text-white hover:underline transition-all" title="Volver al Inicio">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
               <polyline points="9 22 9 12 15 12 15 22"/>
             </svg>
             <span>Home</span>
           </a>
         </li>
-        <li class="current" aria-current="page">Organización Institucional</li>
+        <li class="current text-slate-200" aria-current="page">/ Organización Institucional</li>
       </ul>
     </div>
   </section>
 
   <!-- 2. CONTENIDO PRINCIPAL: DESCRIPCIÓN Y ORGANIGRAMA -->
-  <main class="content">
-    <div class="container">
-      <div class="content-header">
-        <h2>Organización Institucional</h2>
+  <main class="content py-14 px-5 sm:px-8">
+    <div class="container max-w-[1200px] mx-auto">
+      <div class="content-header text-center mb-6">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Organización Institucional</h2>
       </div>
 
-      <p class="content-description">
+      <p class="content-description max-w-full text-[15.5px] leading-relaxed text-slate-700 bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-card mb-10 text-justify">
         En el Instituto de Educación Superior Tecnológico Público Huanta, trabajamos en equipo para garantizar una gestión eficaz y una experiencia educativa de calidad para nuestros estudiantes. Nuestro organigrama refleja la estructura organizativa de nuestra institución, así como las funciones y responsabilidades de cada área. A continuación, presentamos nuestro organigrama actualizado:
       </p>
 
       <!-- Tarjeta con imagen del Organigrama institucional -->
-      <div class="organigrama-card">
+      <div class="organigrama-card bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-card text-center cursor-pointer transition-all hover:shadow-card-hover group">
         <img src="assets/images/nuevo-organigrama.png" 
              onerror="this.onerror=null; this.src='https://iestphuanta.edu.pe/wp-content/uploads/2026/05/NUEVO-ORGANIGRAMA-1024x721.png';" 
              alt="Organigrama Institucional IESTP Huanta" 
-             class="organigrama-img" 
+             class="organigrama-img max-w-full h-auto mx-auto rounded-lg transition-transform group-hover:scale-[1.01]" 
              id="organigramaImage"
              title="Clic para ampliar el organigrama">
         
-        <div class="organigrama-hint">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="organigrama-hint inline-flex items-center gap-2 text-sm text-slate-500 mt-4 bg-slate-100 px-4 py-2 rounded-full">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             <line x1="11" y1="8" x2="11" y2="14"></line>
@@ -57,13 +57,13 @@
   </main>
 
   <!-- Modal Lightbox para visualización ampliada -->
-  <div class="organigrama-modal" id="organigramaModal" aria-hidden="true" role="dialog" aria-label="Visualizador del organigrama en tamaño completo">
-    <div class="organigrama-modal-content">
-      <button class="organigrama-modal-close" id="organigramaModalClose" aria-label="Cerrar vista ampliada">&times;</button>
+  <div class="organigrama-modal fixed inset-0 z-[2000] bg-slate-900/90 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none" id="organigramaModal" aria-hidden="true" role="dialog" aria-label="Visualizador del organigrama en tamaño completo">
+    <div class="organigrama-modal-content relative max-w-5xl max-h-[90vh] bg-white rounded-2xl overflow-hidden shadow-2xl p-2 sm:p-4">
+      <button class="organigrama-modal-close absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center text-2xl transition-colors" id="organigramaModalClose" aria-label="Cerrar vista ampliada">&times;</button>
       <img src="assets/images/nuevo-organigrama.png" 
            onerror="this.onerror=null; this.src='https://iestphuanta.edu.pe/wp-content/uploads/2026/05/NUEVO-ORGANIGRAMA-1024x721.png';" 
            alt="Organigrama Institucional ampliado" 
-           class="organigrama-modal-img">
+           class="organigrama-modal-img max-w-full max-h-[85vh] object-contain rounded-lg">
     </div>
   </div>
 

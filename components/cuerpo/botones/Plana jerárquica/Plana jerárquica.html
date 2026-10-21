@@ -1,177 +1,177 @@
 <!-- ====================================================================
-     COMPONENTE: PLANA JERÁRQUICA
+     COMPONENTE: PLANA JERÁRQUICA (Tailwind CSS v3)
      Ubicación: components/cuerpo/botones/Plana jerárquica/
      Estilos: components/cuerpo/botones/Plana jerárquica/Plana jerárquica.css
      ==================================================================== -->
-<div class="plana-jerarquica-wrapper" id="planaJerarquicaSection">
+<div class="plana-jerarquica-wrapper w-full relative font-sans text-slate-600 bg-slate-50 text-[15px] leading-relaxed animate-fade-in" id="planaJerarquicaSection">
 
   <!-- 1. BANNER SUPERIOR DE TÍTULO (HERO) -->
-  <section class="pagetitle" aria-label="Encabezado de Plana jerárquica">
-    <div class="container">
-      <h1>Plana jerárquica</h1>
-      <div class="crumbs">
-        <a href="#inicio" class="breadcrumb-home-link" title="Volver al Inicio">
-          <i class="fa-solid fa-house" style="font-size: 13px; margin-right: 4px;"></i> Home
+  <section class="pagetitle relative text-white text-center py-20 px-5 shadow-inner" aria-label="Encabezado de Plana jerárquica">
+    <div class="container max-w-[1200px] mx-auto relative z-10">
+      <h1 class="text-3xl sm:text-4xl lg:text-[38px] font-extrabold tracking-tight mb-3 text-shadow-hero">Plana jerárquica</h1>
+      <div class="crumbs flex justify-center items-center gap-2.5 text-sm sm:text-[14.5px] font-medium text-blue-200">
+        <a href="#inicio" class="breadcrumb-home-link inline-flex items-center gap-1.5 text-blue-200 hover:text-white hover:underline transition-all" title="Volver al Inicio">
+          <i class="fa-solid fa-house text-[13px] mr-1"></i> Home
         </a>
-        <span>/</span>
-        <span class="current">Plana jerárquica</span>
+        <span class="text-slate-400 opacity-80 text-[13px]">/</span>
+        <span class="current text-slate-200">Plana jerárquica</span>
       </div>
     </div>
   </section>
 
   <!-- 2. CONTENIDO PRINCIPAL: DIRECTORIO INSTITUCIONAL -->
-  <section class="main-content-section">
-    <div class="container">
+  <section class="main-content-section py-14 px-5 sm:px-8">
+    <div class="container max-w-[1200px] mx-auto">
       
-      <p class="intro">
+      <p class="intro max-w-full text-[15.5px] leading-relaxed text-slate-700 bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-card mb-10 text-justify">
         En el Instituto de Educación Superior Público Huanta, contamos con un equipo comprometido y dedicado que trabaja arduamente para garantizar una educación de calidad. A continuación, presentamos el directorio de la plana jerárquica de nuestra institución, junto con la información básica del personal:
       </p>
 
-      <div class="grid">
+      <div class="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-10 items-start">
         
         <!-- Tarjeta del Director General -->
-        <aside class="card">
-          <div class="card-img-wrap">
-            <img src="assets/images/director.png" alt="Ing. Esaú Villantoy Palomino - Director General">
+        <aside class="card bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-card sticky top-24 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1">
+          <div class="card-img-wrap w-full h-[380px] bg-slate-900 overflow-hidden flex items-center justify-center">
+            <img src="assets/images/director.png" alt="Ing. Esaú Villantoy Palomino - Director General" class="w-full h-full object-cover object-top block transition-transform duration-300 hover:scale-[1.02]">
           </div>
-          <div class="body">
-            <h3>Ing. Esaú VILLANTOY PALOMINO</h3>
-            <div class="role">Director General</div>
-            <p>
+          <div class="body p-6 sm:p-7">
+            <h3 class="text-slate-900 text-xl font-bold leading-snug mb-1.5">Ing. Esaú VILLANTOY PALOMINO</h3>
+            <div class="role inline-block bg-indigo-100 text-indigo-700 text-xs sm:text-[13px] font-bold px-3.5 py-1 rounded-full mb-3.5">Director General</div>
+            <p class="text-sm leading-relaxed text-slate-500 mb-5">
               En el Instituto de Educación Superior Público Huanta, contamos con un equipo comprometido y dedicado que trabaja arduamente para garantizar una educación de calidad.
             </p>
-            <ul class="contact">
-              <li><i class="fa-solid fa-phone"></i> (066) 322296</li>
-              <li><i class="fa-regular fa-envelope"></i> contactos@iestphuanta.edu.pe</li>
-              <li><i class="fa-solid fa-location-dot"></i> Jr. Córdova 650</li>
+            <ul class="contact list-none p-0 m-0 border-t border-slate-100 pt-4 flex flex-col gap-2.5">
+              <li class="text-[13.5px] text-slate-700 flex items-center gap-2.5"><i class="fa-solid fa-phone text-blue-600 text-sm w-[18px] text-center"></i> (066) 322296</li>
+              <li class="text-[13.5px] text-slate-700 flex items-center gap-2.5"><i class="fa-regular fa-envelope text-blue-600 text-sm w-[18px] text-center"></i> contactos@iestphuanta.edu.pe</li>
+              <li class="text-[13.5px] text-slate-700 flex items-center gap-2.5"><i class="fa-solid fa-location-dot text-blue-600 text-sm w-[18px] text-center"></i> Jr. Córdova 650</li>
             </ul>
           </div>
         </aside>
 
         <!-- Directorio del Personal Jerárquico y Coordinadores -->
-        <div class="staff">
+        <div class="staff grid grid-cols-1 md:grid-cols-2 gap-5">
           
-          <div class="item">
-            <h4>Jefe de Unidad Académica</h4>
-            <ul>
-              <li><b>Nombre:</b> Lic. Ismael LIRA HUAMAN</li>
-              <li><b>Cargo:</b> Jefe de Unidad Académica</li>
-              <li><b>Correo electrónico:</b> lirahuamismael@gmail.com</li>
-              <li><b>Celular:</b> 986162715</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Jefe de Unidad Académica</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Lic. Ismael LIRA HUAMAN</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de Unidad Académica</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> lirahuamismael@gmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 986162715</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Secretaría Académica</h4>
-            <ul>
-              <li><b>Nombre:</b> Tec. Kevin Vlaes BANDO GOMEZ</li>
-              <li><b>Cargo:</b> Jefe de secretaría académica</li>
-              <li><b>Correo electrónico:</b> Kev_vls@hotmail.com</li>
-              <li><b>Celular:</b> 995497720</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Secretaría Académica</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Tec. Kevin Vlaes BANDO GOMEZ</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de secretaría académica</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> Kev_vls@hotmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 995497720</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador de Área de Calidad</h4>
-            <ul>
-              <li><b>Nombre:</b> Ing. Gerson Uriel TAYPE MUCHA</li>
-              <li><b>Cargo:</b> Coordinador de Área de Calidad</li>
-              <li><b>Correo electrónico:</b> gersontaypemucha@gmail.com</li>
-              <li><b>Celular:</b> 999171627</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador de Área de Calidad</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Ing. Gerson Uriel TAYPE MUCHA</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador de Área de Calidad</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> gersontaypemucha@gmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 999171627</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador del Programa de Estudios de Diseño y Programación Web</h4>
-            <ul>
-              <li><b>Nombre:</b> Juan Carlos TORRES LOZANO</li>
-              <li><b>Cargo:</b> Coordinador del Área Académica de Diseño y Programación Web</li>
-              <li><b>Correo electrónico:</b> jctorreslozano@gmail.com</li>
-              <li><b>Celular:</b> 935627200</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador del Programa de Estudios de Diseño y Programación Web</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Juan Carlos TORRES LOZANO</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador del Área Académica de Diseño y Programación Web</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> jctorreslozano@gmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 935627200</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador del Programa de Estudios de Industrias de Alimentos y Bebidas</h4>
-            <ul>
-              <li><b>Nombre:</b> Ing. Ernesto ANDÍA OVALLE</li>
-              <li><b>Cargo:</b> Coordinador del Área Académica de Industrias de Alimentos y Bebidas</li>
-              <li><b>Correo electrónico:</b> andiaernesto@gmail.com</li>
-              <li><b>Celular:</b> 955956533</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador del Programa de Estudios de Industrias de Alimentos y Bebidas</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Ing. Ernesto ANDÍA OVALLE</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador del Área Académica de Industrias de Alimentos y Bebidas</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> andiaernesto@gmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 955956533</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador del Programa de Estudios de Producción Agropecuaria</h4>
-            <ul>
-              <li><b>Nombre:</b> Ing. René Ángel ALEJANDRO SALAZAR</li>
-              <li><b>Cargo:</b> Coordinador del Área Académica de Producción Agropecuaria</li>
-              <li><b>Correo electrónico:</b> isthreal@hotmail.com</li>
-              <li><b>Celular:</b> 966127390</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador del Programa de Estudios de Producción Agropecuaria</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Ing. René Ángel ALEJANDRO SALAZAR</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador del Área Académica de Producción Agropecuaria</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> isthreal@hotmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 966127390</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Jefe de Unidad Administrativa</h4>
-            <ul>
-              <li><b>Nombre:</b> CPC Maricela Silvia GUERRA LÓPEZ</li>
-              <li><b>Cargo:</b> Jefe de Área Administrativa</li>
-              <li><b>Correo electrónico:</b> maricelaguerra@iestphuanta.edu.pe</li>
-              <li><b>Celular:</b> 980099744</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Jefe de Unidad Administrativa</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> CPC Maricela Silvia GUERRA LÓPEZ</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de Área Administrativa</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> maricelaguerra@iestphuanta.edu.pe</li>
+              <li><b class="text-slate-800">Celular:</b> 980099744</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Jefe de Unidad de Bienestar y Empleabilidad</h4>
-            <ul>
-              <li><b>Nombre:</b> Lic. Alfonso Alvaro MORENO MARQUEZ</li>
-              <li><b>Cargo:</b> Jefe de Bienestar y Empleabilidad</li>
-              <li><b>Correo electrónico:</b> alfonsoamoreno@hotmail.com</li>
-              <li><b>Celular:</b> 966903518</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Jefe de Unidad de Bienestar y Empleabilidad</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Lic. Alfonso Alvaro MORENO MARQUEZ</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de Bienestar y Empleabilidad</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> alfonsoamoreno@hotmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 966903518</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Jefe de Investigación e Innovación Tecnológica</h4>
-            <ul>
-              <li><b>Nombre:</b> Ing. Abraham David CRUZ CAPCHA</li>
-              <li><b>Cargo:</b> Jefe de Unidad de Investigación e Innovación Tecnológica</li>
-              <li><b>Correo electrónico:</b> david.cruz@iestphuanta.edu.pe</li>
-              <li><b>Celular:</b> 990909525</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Jefe de Investigación e Innovación Tecnológica</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Ing. Abraham David CRUZ CAPCHA</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de Unidad de Investigación e Innovación Tecnológica</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> david.cruz@iestphuanta.edu.pe</li>
+              <li><b class="text-slate-800">Celular:</b> 990909525</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Jefe de la Unidad de Formación Continua</h4>
-            <ul>
-              <li><b>Nombre:</b> Ing. Nancy Beatriz RODRIGUEZ LAOS</li>
-              <li><b>Cargo:</b> Jefe de la Unidad de Formación Continua</li>
-              <li><b>Correo electrónico:</b> nayito.rodriguez@gmail.com</li>
-              <li><b>Celular:</b> 955956599</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Jefe de la Unidad de Formación Continua</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Ing. Nancy Beatriz RODRIGUEZ LAOS</li>
+              <li><b class="text-slate-800">Cargo:</b> Jefe de la Unidad de Formación Continua</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> nayito.rodriguez@gmail.com</li>
+              <li><b class="text-slate-800">Celular:</b> 955956599</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador del Programa de Estudios de Enfermería Técnica</h4>
-            <ul>
-              <li><b>Nombre:</b> Lic. Jimmy ARANDA ESCALANTE</li>
-              <li><b>Cargo:</b> Coordinador del Área de Enfermería Técnica</li>
-              <li><b>Correo electrónico:</b> 28295518@iestphuanta.edu.pe</li>
-              <li><b>Celular:</b> 979106040</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador del Programa de Estudios de Enfermería Técnica</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Lic. Jimmy ARANDA ESCALANTE</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador del Área de Enfermería Técnica</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> 28295518@iestphuanta.edu.pe</li>
+              <li><b class="text-slate-800">Celular:</b> 979106040</li>
             </ul>
           </div>
 
-          <div class="item">
-            <h4>Coordinador del Programa de Estudios de Mecatrónica Automotriz</h4>
-            <ul>
-              <li><b>Nombre:</b> Lic. Renán LUDEÑA ARANDA</li>
-              <li><b>Cargo:</b> Coordinador del Área Académica de Mecatrónica Automotriz</li>
-              <li><b>Correo electrónico:</b> contactos@iestphuanta.edu.pe</li>
-              <li><b>Celular:</b> (066) 322296</li>
+          <div class="item bg-white p-5 rounded-xl border border-slate-200 shadow-card hover:border-indigo-300 hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200">
+            <h4 class="text-slate-900 font-bold text-base mb-3 pb-2 border-b border-slate-100 flex items-center">Coordinador del Programa de Estudios de Mecatrónica Automotriz</h4>
+            <ul class="list-none p-0 m-0 flex flex-col gap-1.5 text-sm text-slate-600">
+              <li><b class="text-slate-800">Nombre:</b> Lic. Renán LUDEÑA ARANDA</li>
+              <li><b class="text-slate-800">Cargo:</b> Coordinador del Área Académica de Mecatrónica Automotriz</li>
+              <li><b class="text-slate-800">Correo electrónico:</b> contactos@iestphuanta.edu.pe</li>
+              <li><b class="text-slate-800">Celular:</b> (066) 322296</li>
             </ul>
           </div>
 
-          <p class="closing">
+          <p class="closing col-span-1 md:col-span-2 text-center text-sm text-slate-500 bg-slate-100/70 p-5 rounded-xl border border-slate-200 leading-relaxed mt-4">
             En el Instituto de Educación Superior Público Huanta, valoramos el trabajo en equipo y la colaboración para lograr nuestros objetivos institucionales. Si necesitas ponerte en contacto con algún miembro de nuestro equipo, no dudes en utilizar la información proporcionada anteriormente.
           </p>
 
